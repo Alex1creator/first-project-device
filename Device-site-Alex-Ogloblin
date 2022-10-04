@@ -11,22 +11,22 @@
             <img class="logo" src="#" alt="Логотип Интеренет-магазин "Девайс">
            <nav>
                 <ul class="Navigation-list-navigation-user">
-                    <li class="navigation-item"> <a href="#">
+                    <li class="navigation-item"> <a href="">
                          </a><span class="visually-hidden">
                         Поиск</span>
                     </li>
 
-                    <li class="navigation-item"><a href="#"> </a><span class="visually-hidden">
+                    <li class="navigation-item"><a href=""> </a><span class="visually-hidden">
                         Войти</span>
                     </li>
                 </ul>
                 <ul> 
-                    <li class="navigation-item"><a href="#"></a>
+                    <li class="navigation-item"><a href=""></a>
                     <span class="visually-hidden">
                         Сравнить</span>
                     </li>
 
-                    <li class="navigation-item"><a href="#"></a>
+                    <li class="navigation-item"><a href=""></a>
                         <span class="visually-hidden">
                         Корзина</span>
                     </li>     
