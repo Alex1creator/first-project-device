@@ -9,7 +9,30 @@
         <h1 class="visually-hidden">Интеренет-магазин "Девайс"</h1>
         <header class="page-header">
             <img class="logo" src="#" alt="Логотип Интеренет-магазин "Девайс">
-           <ul class="logo-in-header">
+           <nav>
+                <ul class="Navigation-list-navigation-user">
+                    <li class="navigation-item"> <a href="#">
+                         </a><span class="visually-hidden">
+                        Поиск</span></li>
+
+                    <li class="navigation-item"><a href="#"> </a><span class="visually-hidden">
+                        Войти</span></li>
+                </ul>
+                <ul> 
+                    <li class="navigation-item"><a href="#"></a>
+                    <span class="visually-hidden">
+                            Сравнить</span>
+                    </li>
+
+                    <li class="navigation-item"><a href="#"></a>
+                        <span class="visually-hidden">
+                                Корзина</span>
+                        </li>     
+                </ul>
+
+
+           </nav>
+            
             <li class="Logo"></li>
            </ul> 
         </header>
