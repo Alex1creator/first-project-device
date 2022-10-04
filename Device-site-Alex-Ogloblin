@@ -13,29 +13,26 @@
                 <ul class="Navigation-list-navigation-user">
                     <li class="navigation-item"> <a href="#">
                          </a><span class="visually-hidden">
-                        Поиск</span></li>
+                        Поиск</span>
+                    </li>
 
                     <li class="navigation-item"><a href="#"> </a><span class="visually-hidden">
-                        Войти</span></li>
+                        Войти</span>
+                    </li>
                 </ul>
                 <ul> 
                     <li class="navigation-item"><a href="#"></a>
                     <span class="visually-hidden">
-                            Сравнить</span>
+                        Сравнить</span>
                     </li>
 
                     <li class="navigation-item"><a href="#"></a>
                         <span class="visually-hidden">
-                                Корзина</span>
-                        </li>     
+                        Корзина</span>
+                    </li>     
                 </ul>
-
-
-           </nav>
-            
-            <li class="Logo"></li>
-           </ul> 
+           </nav>           
         </header>
-<p>new</p>
+        
     </body>
 </html>
