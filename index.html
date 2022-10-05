@@ -8,21 +8,21 @@
     <body>
        
         <header class="page-header">
-            <img class="logo" src="#" alt="Логотип Интеренет-магазин "Девайс">
+            <img class="logo" src="#" alt="Логотип Интеренет-магазин Девайс">
            <nav>
-                <ul class="Navigation-list-navigation-user">
-                    <li class="navigation-item"> <a href="">
+                <ul class="categories-products-list-categories-products-user">
+                    <li class="categories-products-item"> <a href="">
                          </a><span class="visually-hidden">
                         Поиск</span>
                     </li>
 
-                    <li class="navigation-item"><a href=""> </a><span class="visually-hidden">
+                    <li class="categories-products-item"><a href=""> </a><span class="visually-hidden">
                         Войти</span>
                     </li>
                 </ul>
                 <ul> 
-                    <li class="navigation-item"><a href="">Сравнить</a></li>                                       
-                    <li class="navigation-item"><a href=""></a>
+                    <li class="categories-products-item"><a href="">Сравнить</a></li>                                       
+                    <li class="categories-products-item"><a href=""></a>
                         <span class="visually-hidden">
                         Корзина</span>
                     </li>     
@@ -31,20 +31,21 @@
         </header>
         <main>
             <h1 class="visually-hidden">Интеренет-магазин "Девайс"</h1>
-            <nav>
-            <section class="catalog">               
-                <ul class="catalog list">
-                  <li class="catalog-list-button"><a class="navigation-link" href="">каталог</a></li>
-                  <li class="catalog-list-button"><img class="catalog-ikon" src="" alt="Иконка открытия каталога"></li>
-                  <li class="catalog-item"><a class="navigation-link" href="">виртуальная реальность</a></li>
-                  <li class="catalog-item"><a class="navigation-link" href="">фитнес-браслеты</a></li>
-                  <li class="catalog-item"><a class="navigation-link" href="">квадрокоптеры</a></li>
-                  <li class="catalog-item"><a class="navigation-link" href="">моноподы для селфи</a></li>
-                  <li class="catalog-item"><a class="navigation-link" href="">умные часы</a></li>
-                  <li class="catalog-item"><a class="navigation-link" href="">экшн-камеры</a></li>
+            <section class="categories-products">
+                <h2 class="visually-hidden">каталог товаров</h2>               
+                <ul class="categories-products list">
+                  <li class="categories-products-list-button"><a class="categories-products-link" href="">каталог</a></li>
+                  <li class="categories-products-list-button"><img class="categories-products-ikon" src="#" alt="Иконка открытия каталога"></li>
+                  <li class="categories-products-item"><a class="categories-products-link" href="">виртуальная реальность</a></li>
+                  <li class="categories-products-item"><a class="categories-products-link" href="">фитнес-браслеты</a></li>
+                  <li class="categories-products-item"><a class="categories-products-link" href="">квадрокоптеры</a></li>
+                  <li class="categories-products-item"><a class="categories-products-link" href="">моноподы для селфи</a></li>
+                  <li class="categories-products-item"><a class="categories-products-link" href="">умные часы</a></li>
+                  <li class="categories-products-item"><a class="categories-products-link" href="">экшн-камеры</a></li>
                 </ul>
             </section>
             <section class="service">
+                <h2 class="visually-hidden">Услуги</h2>
                 <ul class="service-list">
                     <li class="service-item"><a href="">доставка</a></li>
                     <li class="service-item"><a href="">гарантия</a></li>
@@ -53,12 +54,93 @@
             </section>
             <section class="gallery">
                 <h2 class="visually-hidden">Фото девайсов</h2>
-                <img class="slider-image" src="" alt="фото девайсов">
+                <img class="slider-image" src="#" alt="фото девайсов">
+                <img class="slider-image" src="" alt="номер рейтинга девайса">
+                <!--
+                <figure> <img src="" alt="квадрокоптер"><figcaption><p><strong>Порхает как бабочка,
+                    жалит как пчела!</strong></p>
+                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
+                </p></figcaption></figure>-->
                 <button class="slider-button-sleder-prev" type="button">предыдущая фото</button>
                 <button class="slider-button-sleder-next" type="button">следующая фото</button>
-            </section>
-            </nav>
+                <p>
+                    <a class="categories-products-link" href="#">подробнее</a>
+                </p>
+                <ol class="slider-pagination">
+                    <li class="slider-pagination-item">
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">1 фото</span></button>
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">2 фото</span></button>
+                        <button class="slider-pagination-button slider-pagination-button-current" type="button"><span class="visually-hidden">3 фото</span></button>
+                    </li>
 
+                </ol>
+                <table class="device-characteristics">
+                    <tr class="device-characteristics-item">
+                        <td>800 м</td><td>50 м</td>
+                    </tr>
+                    <tr>
+                        <td>Дальность полета</td><td>Дальность поражения</td>
+                    </tr>
+                </table>
+                <table class="device-characteristics">
+                    <tr class="device-characteristics-item">
+                        <td>48 часов</td>
+                    </tr>
+                    <tr>
+                        <td>Без подзарядки</td>
+                    </tr>
+                </table>
+                <table class="device-characteristics">
+                    <tr class="device-characteristics-item">
+                        <td>8.5 м</td><td>5 кг</td><td>Карбон</td>
+                    </tr>
+                    <tr>
+                        <td>Длина палки</td><td>Вес палки</td><td>Материал</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="categories-products">
+                <h2 class="visually-hidden">Категории товаров</h2>
+                <ul>
+                  <li class="categories-products-item">
+                      <a class="categories-products-link" href="">
+                          <img src="#" alt="товары виртуальной реальности">  
+                          <h3 class="categories-products-title">Виртуальная реальность</h3> 
+                      </a>
+                  </li>
+                  <li class="categories-products-item">
+                      <a class="categories-products-link" href="">
+                          <img src="#" alt="товары виртуальной реальности">  
+                          <h3 class="categories-products-title">Моноподы для селфи</h3> 
+                      </a>
+                  </li>
+                  <li class="categories-products-item">
+                      <a class="categories-products-link" href="">
+                          <img src="#" alt="товары виртуальной реальности">  
+                          <h3 class="categories-products-title">Виртуальная реальность</h3> 
+                      </a>
+                  </li>
+                  <li class="categories-products-item">
+                      <a class="categories-products-link" href="">
+                          <img src="#" alt="товары виртуальной реальности">  
+                          <h3 class="categories-products-title">Экшн-камеры</h3> 
+                      </a>
+                  </li>
+                  <li class="categories-products-item">
+                      <a class="categories-products-link" href="">
+                          <img src="#" alt="товары виртуальной реальности">  
+                          <h3 class="categories-products-title">Умные часы</h3> 
+                      </a>
+                  </li>
+                  <li class="categories-products-item">
+                      <a class="categories-products-link" href="">
+                          <img src="#" alt="товары виртуальной реальности">  
+                          <h3 class="categories-products-title">Квадрокоптеры</h3> 
+                      </a>
+                  </li>
+                </ul>
+            </section>
+            
         </main>
     </body>
 </html>
