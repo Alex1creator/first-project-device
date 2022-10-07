@@ -6,35 +6,46 @@
             Интеренет-магазина "Девайс" автор Оглоблин Александр г. Киров</title>
     </head>
     <body>
-       
         <header class="page-header">
             <img class="logo" src="#" alt="Логотип Интеренет-магазин Девайс">
-           <nav>
-                <ul class="categories-products-list-categories-products-user">
-                    <li class="categories-products-item"> <a href="">
-                         </a><span class="visually-hidden">
-                        Поиск</span>
+            <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="post">
+                <input type="text" name="search-form">
+                <input type="submit" name="search-form" value="Найти">
+            </form>
+            <nav>
+                <ul class="header-list">
+                    <li class="header-link"><a class="header-link" href="#"><img class="header-item-icon" src="" alt="Иконка входа"> 
+                    <span class="header-item">Войти</span></a>
                     </li>
-
-                    <li class="categories-products-item"><a href=""> </a><span class="visually-hidden">
-                        Войти</span>
+                    <li class="header-item"><a class="header-link" href=""><img class="header-item-icon" src="" alt="Иконка Сравнить">
+                    Сравнить</a>
                     </li>
+                    <li class="header-item"><a class="header-link" href=""><img class="header-item-icon" src="" alt="Иконка Корзина">
+                    <span class="header-item">
+                    Корзина</span></a>
+                    </li>    
                 </ul>
-                <ul> 
-                    <li class="categories-products-item"><a href="">Сравнить</a></li>                                       
-                    <li class="categories-products-item"><a href=""></a>
-                        <span class="visually-hidden">
-                        Корзина</span>
-                    </li>     
+            </nav>
+            <section class="categories-products">
+                <h2 class="categories-products-title visually-hidden">каталог товаров</h2>               
+                <ul class="categories-products-list">
+                <li class="categories-products-list-button"><a class="categories-products-link" href="">каталог товаров</a></li>
+                <li class="categories-products-list-button"><img class="categories-products-ikon" src="#" alt="Иконка открытия каталога"></li>
+                <li class="categories-products-item"><a class="categories-products-link" href="">виртуальная реальность</a></li>
+                <li class="categories-products-item"><a class="categories-products-link" href="">фитнес-браслеты</a></li>
+                <li class="categories-products-item"><a class="categories-products-link" href="">квадрокоптеры</a></li>
+                <li class="categories-products-item"><a class="categories-products-link" href="">моноподы для селфи</a></li>
+                <li class="categories-products-item"><a class="categories-products-link" href="">умные часы</a></li>
+                <li class="categories-products-item"><a class="categories-products-link" href="">экшн-камеры</a></li>
                 </ul>
-           </nav>           
+            </section>
         </header>
         <main>
             <h1 class="visually-hidden">Интеренет-магазин "Девайс"</h1>
             <section class="categories-products">
-                <h2 class="visually-hidden">каталог товаров</h2>               
-                <ul class="categories-products list">
-                  <li class="categories-products-list-button"><a class="categories-products-link" href="">каталог</a></li>
+                <h2 class="categories-products-title visually-hidden">каталог товаров</h2>               
+                <ul class="categories-products-list">
+                  <li class="categories-products-list-button"><a class="categories-products-link" href="">каталог товаров</a></li>
                   <li class="categories-products-list-button"><img class="categories-products-ikon" src="#" alt="Иконка открытия каталога"></li>
                   <li class="categories-products-item"><a class="categories-products-link" href="">виртуальная реальность</a></li>
                   <li class="categories-products-item"><a class="categories-products-link" href="">фитнес-браслеты</a></li>
@@ -56,11 +67,6 @@
                 <h2 class="visually-hidden">Фото девайсов</h2>
                 <img class="slider-image" src="#" alt="фото девайсов">
                 <img class="slider-image" src="" alt="номер рейтинга девайса">
-                <!--
-                <figure> <img src="" alt="квадрокоптер"><figcaption><p><strong>Порхает как бабочка,
-                    жалит как пчела!</strong></p>
-                <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.
-                </p></figcaption></figure>-->
                 <button class="slider-button-sleder-prev" type="button">предыдущая фото</button>
                 <button class="slider-button-sleder-next" type="button">следующая фото</button>
                 <p>
@@ -143,21 +149,24 @@
             <section class="service-buttons">
                 <h2 class="visually-hidden">Услуги</h2>
                   <article>
-                      <button class="service-buttons-item" type="button"><h3>доставка</h3></button>
+                      <h3>доставка</h3>
+                      <button class="service-buttons-item" type="button"></button>
                       <p class="service-buttons-description">Мы с удовольствием доставим ваш товар прямо
                        к вашему подъезду совершенно бесплатно! Ведь
                        мы неплохо заработаем, поднимая его на ваш этаж.</p>
                       <img class="service-buttons-description" src="" alt="Иконка курьера">
                   </article>
                   <article>
-                      <button class="service-buttons-item" type="button"><h3>гарантия</h3></button>
+                      <h3>гарантия</h3>
+                      <button class="service-buttons-item" type="button"></button>
                         <p class="service-buttons-description">Если из-за возгорания купленного у нас товара у вас
                             сгорит дом — не переживайте, мы выдадим вам новый.
                             Товар, не дом, конечно же.</p>
                       <img class="service-buttons-description" src="" alt="Иконка гарантии">
                   </article>
                   <article>
-                      <button class="service-buttons-item" type="button"><h3>кредит</h3></button>
+                      <h3>кредит</h3>
+                      <button class="service-buttons-item" type="button"></button>
                         <p class="service-buttons-description">Залезть в долговую яму стало проще! 
                             Кредитные консультанты подберут для вас наиболее выгодные условия кредита. 
                             Выгодные для банка, разумеется.</p>
@@ -183,10 +192,10 @@
               <h2 class="contacts-title">Контакты</h2>
               <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. 
               Заодно сможете проверить работоспособность покупки. </p>
-              <h3><p class="contacts-subtitle">Интеренет-магазин<q>Девайс</q></p></h3>
+              <h3 class="contacts-subtitle">Интеренет-магазин<q>Девайс</q></h3>
               <address class="contacts-address">
                 <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <a class="contacts-address-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+                <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
               </address>
               <h3 class="contacts-subtitle">Время работы</h3>
               <ul class="contacts-schedule">
@@ -196,7 +205,7 @@
               <a class="button" href="#"><img src="" alt="кнопка написать нам">Напишите нам</a>
             </section>
             <section class="mailling">
-              <h2 class="mailling-title"><p class="mailling-item">Подпишитесь на рассылку</p></h2>
+              <h2 class="mailling-title">Подпишитесь на рассылку</h2>
               <p class="mailling-description">Еженедельный дайджест с обзорами новинок,
                 длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
               <form class="mailing-form" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -217,7 +226,7 @@
             <li class="footer-services"> <a class="footer-services-link" href="">гарантия</a></li>
             <li class="footer-services"> <a class="footer-services-link" href="">контакты</a></li>
           </ul>
-          <a class="footer-contacts-phone" href="tel:+7 (812) 812-12-12">+7 (812) 812-12-12</a>
+          <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           <img class="element-yellow" src="" alt="Графический элемент">  
           <section class="footer-social">
             <h2 class="footer-social-title visually-hidden">Социальные сети</h2>
