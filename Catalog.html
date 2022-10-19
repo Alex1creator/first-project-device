@@ -8,36 +8,36 @@
 
 <body>
     <header class="page-header">
-        <a class="navigation-logo" href="index.html"><img class="logo" src="#"
-                alt="Логотип Интеренет-магазин Девайс"></a>
+        <img class="logo" src="img\logo-header.svg" width="145" height="36" alt="Логотип Интеренет-магазин Девайс">
         <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="post">
             <input type="text" name="search-form">
             <input type="submit" name="search-form" value="Найти">
         </form>
         <nav>
             <ul class="header-list">
-                <li class="header-link"><a class="header-link" href="#"><img class="header-item-icon" src=""
-                            alt="Иконка входа">
+                <li class="header-link"><a class="header-link" href="#"><img class="header-item-icon"
+                            src="img\entrance.svg" width="13" height="12" alt="Иконка входа">
                         <span class="header-item">Войти</span></a>
                 </li>
-                <li class="header-item"><a class="header-link" href=""><img class="header-item-icon" src=""
-                            alt="Иконка Сравнить">
+                <li class="header-item"><a class="header-link" href=""><img class="header-item-icon"
+                            src="img\comparison.svg" width="10" height="12" alt="Иконка Сравнить">
                         Сравнить</a>
                 </li>
-                <li class="header-item"><a class="header-link" href=""><img class="header-item-icon" src=""
-                            alt="Иконка Корзина">
+                <li class="header-item"><a class="header-link" href=""><img class="header-item-icon"
+                            src="img\basket-2-products.svg" width="31" height="21" alt="Иконка Корзина">
                         <span class="header-item">
                             Корзина</span></a>
                 </li>
             </ul>
         </nav>
         <section class="categories-products">
-            <h1 class="categories-products-title visually-hidden">каталог товаров</h1>
+            <h2 class="categories-products-title visually-hidden">каталог товаров</h2>
             <ul class="categories-products-list">
                 <li class="categories-products-list-button"><a class="categories-products-link"
                         href="Catalog.html">каталог товаров</a></li>
-                <li class="categories-products-list-button"><img class="categories-products-ikon" src="#"
-                        alt="Иконка открытия каталога"></li>
+                <li class="categories-products-list-button"><a class="open-categories-products-list" href=""><img
+                            class="categories-products-ikon" src="img\plus-catalog.svg" width="50" height="50"
+                            alt="Иконка открытия каталога"></a></li>
                 <li class="categories-products-item"><a class="categories-products-link" href="">виртуальная
                         реальность</a></li>
                 <li class="categories-products-item"><a class="categories-products-link" href="">фитнес-браслеты</a>
@@ -47,6 +47,14 @@
                 </li>
                 <li class="categories-products-item"><a class="categories-products-link" href="">умные часы</a></li>
                 <li class="categories-products-item"><a class="categories-products-link" href="">экшн-камеры</a></li>
+            </ul>
+        </section>
+        <section class="service">
+            <h2 class="visually-hidden">Услуги</h2>
+            <ul class="service-list">
+                <li class="service-item"><a href="#">доставка</a></li>
+                <li class="service-item"><a href="#">гарантия</a></li>
+                <li class="service-item"><a href="#">контакты</a></li>
             </ul>
         </section>
     </header>
@@ -132,28 +140,36 @@
         </section>
         <ul class="product-list">
             <li class="product-card">
-                <a class="product-card-link" href="#"><img class="product-card-image" src="" alt="">
+                <a class="product-card-link" href="#"><img class="product-card-image"
+                        src="img\img-catalog\selfy-stick-lite.jpg" width="360" height="380"
+                        alt="Любительская селфи-палка">
                     <h3 class="product-card-title">Любительская селфи-палка</h3>
                 </a>
                 <b class="product-card-price">500 р</b>
                 <a class="product-card-button button" href="#">Купить</a>
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="#"><img class="product-card-image" src="" alt="">
+                <a class="product-card-link" href="#"><img class="product-card-image"
+                        src="img\img-catalog\selfy-stick-professional.jpg" width="360" height="380"
+                        alt="Профессиональная селфи-палка">
                     <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                 </a>
                 <b class="product-card-price">1500 р</b>
                 <a class="product-card-button button" href="#">Купить</a>
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="#"><img class="product-card-image" src="" alt="">
+                <a class="product-card-link" href="#"><img class="product-card-image"
+                        src="img\img-catalog\selfy-stick-waterproofe.png" width="360" height="380"
+                        alt="Непотопляемая селфи-палка">
                     <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                 </a>
                 <b class="product-card-price">2500 р</b>
                 <a class="product-card-button button" href="#">Купить</a>
             </li>
             <li class="product-card">
-                <a class="product-card-link" href="#"><img class="product-card-image" src="" alt="">
+                <a class="product-card-link" href="#"><img class="product-card-image"
+                        src="img\img-catalog\selfy-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка "
+                        следуй-за-мной"">
                     <h3 class="product-card-title">Селфи-палка "следуй-за-мной"</h3>
                 </a>
                 <b class="product-card-price">1500 р</b>
@@ -174,8 +190,8 @@
         </ul>
         <a class="catalog-more" href="#"><span class="catalog-more-title">загрузить еще</span></a>
     </main>
-    <footer>
-        <img class="logo" src="" alt="Логотип Интеренет-магазин Девайс">
+    <footer class="page-footer">
+        <img class="logo" src="img\logo-footer.svg" width="145" height="36" alt="Логотип Интеренет-магазин Девайс">
         <h2 class="visually-hidden">Контакты</h2>
         <address class="contacts-address">
             <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
@@ -190,15 +206,18 @@
         <section class="footer-social">
             <h2 class="footer-social-title visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">
-                <li class="footer-social-item"><a class="button" href="#"><span
+                <li class="footer-social-item"><a class="button" href="#"><img class="footer-social-link"
+                            src="img\logo-facebook.svg" width="40" height="40" alt="фейсбук"><span
                             class="visually-hidden">фейсбук</span></a></li>
-                <li class="footer-social-item"><a class="button" href="#"><span
+                <li class="footer-social-item"><a class="button" href="#"><img class="footer-social-link"
+                            src="img\logo-instagram.svg" width="40" height="40" alt="инстаграм"><span
                             class="visually-hidden">инстаграм</span></a></li>
-                <li class="footer-social-item"><a class="button" href="#"><span
+                <li class="footer-social-item"><a class="button" href="#"><img class="footer-social-link"
+                            src="img\logo-twitter.svg" width="40" height="40" alt="твиттер"><span
                             class="visually-hidden">твиттер</span></a></li>
             </ul>
-            <a class="footer-made-link" href="https://htmlacademy.ru/"><img class="logo-academy" src=""
-                    alt="Логотип htmlacademy"></a>
+            <a class="footer-made-link" href="https://htmlacademy.ru/"><img class="logo-academy"
+                    src="img\logo-htmlacademy.svg" width="115" height="33" alt="Логотип htmlacademy"></a>
         </section>
     </footer>
 </body>
