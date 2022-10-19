@@ -15,3 +15,7 @@
     src: url(fonts\Raleway-ExtraBold.woff2) format(woff2),
     url(fonts\Raleway-ExtraBold.woff) format(woff);
 }
+
+body {
+    color: red;
+}
