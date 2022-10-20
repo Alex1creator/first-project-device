@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Rubik", sans-serif;
-    font-style: bold;
+    font-style: normal;
     font-weight: 700;
     font-display: swap;
     src: url(fonts\Rubik-Bold.woff2) format(woff2),
@@ -9,13 +9,64 @@
 
 @font-face {
     font-family: "Raleway ExtraBold", sans-serif;
-    font-style: extrabold;
+    font-style: normal;
     font-weight: 800;
     font-display: swap;
     src: url(fonts\Raleway-ExtraBold.woff2) format(woff2),
     url(fonts\Raleway-ExtraBold.woff) format(woff);
 }
 
+@font-face {
+    font-family: "Rubik regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(fonts\Rubik-Regular.woff2) format(woff2),
+    url(fonts\Rubik-Regular.woff2)  format(woff);
+}
+
+@font-face {
+    font-family: "Rubik bold", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+src: url(fonts\Rubik-Bold.woff2) format(woff2),
+url(fonts\Rubik-Regular.woff)  format(woff);
+}
 body {
-    color: red;
+    font-family: "Raleway ExtraBold", sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+}
+
+.header-search {
+    font-family: "Rubik regular";
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.header-list {
+    font-family: "Raleway ExtraBold";
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.device-rating-number {
+    font-family: "Rubik bold";
+    font-size: 180px;
+    line-height: 30px;
+    color: white;
+}
+
+.index-slogan {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.index-slogan-description {
+    font-family: "Rubik regular";
+    font-size: 18px;
+    line-height: 30px;
 }
