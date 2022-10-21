@@ -133,21 +133,13 @@ body {
     line-height: 30px;
 }
 
-.contacts-address-text, .contacts-address-phone {
+.contacts-address-text, .contacts-address-phone, .mailling-description {
     font-family: "Rubik regular";
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
     font-weight: 400;
 }
-
-/*.contacts-address-phone {
-    font-family: "Rubik regular";
-    font-size: 18px;
-    line-height: 30px;
-    font-style: normal;
-    font-weight: 400;
-}*/
 
 .mailling-title {
     font-size: 50px;
@@ -160,4 +152,17 @@ body {
     line-height: 30px;
     font-style: normal;
     font-weight: 400;
+}
+
+.footer-address-text, .footer-contacts-phone {
+    font-family: "Rubik regular";
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.footer-social-link {
+    background: rgba(255, 255, 255, 0.3);
+
 }
