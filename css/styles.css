@@ -141,6 +141,8 @@ body {
     font-family: "Rubik regular";
     font-size: 18px;
     line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
 }
 
 .mailling-title {
