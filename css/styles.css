@@ -133,7 +133,7 @@ body {
     line-height: 30px;
 }
 
-.contacts-address-text {
+.contacts-address-text, .contacts-address-phone {
     font-family: "Rubik regular";
     font-size: 18px;
     line-height: 30px;
@@ -141,13 +141,13 @@ body {
     font-weight: 400;
 }
 
-.contacts-address-phone {
+/*.contacts-address-phone {
     font-family: "Rubik regular";
     font-size: 18px;
     line-height: 30px;
     font-style: normal;
     font-weight: 400;
-}
+}*/
 
 .mailling-title {
     font-size: 50px;
