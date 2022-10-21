@@ -113,3 +113,32 @@ body {
     font-size: 18px;
     line-height: 20px;
 }
+
+.contacts-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.contacts-description {
+    font-family: "Rubik regular";
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contacts-subtitle {
+    font-family: "Rubik bold";
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.contacts-address-text {
+    font-family: "Rubik regular";
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.contacts-address-phone {
+    font-family: "Rubik regular";
+    font-size: 18px;
+    line-height: 30px;
+}
