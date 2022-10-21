@@ -40,12 +40,23 @@ body {
     line-height: 21px;
     color: black;
 }
+.page-header {
+    background-color: #FFE17F;
+}
+
+footer {
+    background-color: #444444;
+}
+
+a {
+    text-decoration: none;
+}
 
 .header-search {
     font-family: "Rubik regular";
     font-size: 16px;
     line-height: 20px;
-
+    background-color: #FFE17F;
 }
 
 .header-list {
@@ -59,6 +70,7 @@ body {
     font-size: 180px;
     line-height: 30px;
     color: white;
+    background-color: #FFE17F;
 }
 
 .index-slogan {
@@ -154,7 +166,7 @@ body {
     font-weight: 400;
 }
 
-.footer-address-text, .footer-contacts-phone {
+.footer-address-text {
     font-family: "Rubik regular";
     font-size: 16px;
     line-height: 20px;
@@ -162,7 +174,83 @@ body {
     font-weight: 400;
 }
 
-.footer-social-link {
-    background: rgba(255, 255, 255, 0.3);
+.footer-contacts-phone {
+    font-family: "Rubik regular";
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: underline;
+}
 
+.footer-social-link {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+
+/* Стилизация каталога */
+.catalog-title {
+    font-size: 50px;
+    line-height: 50px;
+}
+
+.breadcrumbs-list {
+    font-family: "Rubik regular";
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.filter-header {
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.catalog-filter-title, .filter-input-color, .filter-input-bluetooth {
+    font-family: "Rubik bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.filter-colors-list, .filter-bluetooth-item {
+    font-family: "Rubik regular";
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.catalog-input-price {
+    font-family: "Rubik regular";
+    font-size: 15px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.product-card-title {
+    font-family: "Rubik bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.product-card-price {
+    font-family: "Rubik regular";
+    font-size: 18px;
+    line-height: 21px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.select-control {
+    font-family: "Rubik regular";
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
 }
