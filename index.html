@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css\styles.css">
 </head>
 
-<body>
+<body class="site-device">
     <header class="page-header">
         <img class="logo" src="img\logo-header.svg" width="145" height="36" alt="Логотип Интеренет-магазин Девайс">
         <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -54,9 +54,9 @@
         <section class="service">
             <h2 class="visually-hidden">Услуги</h2>
             <ul class="service-list">
-                <li class="service-item"><a href="#">доставка</a></li>
-                <li class="service-item"><a href="#">гарантия</a></li>
-                <li class="service-item"><a href="#">контакты</a></li>
+                <li class="service-item"><a class="service-link" href="#">доставка</a></li>
+                <li class="service-item"><a class="service-link" href="#">гарантия</a></li>
+                <li class="service-item"><a class="service-link" href="#">контакты</a></li>
             </ul>
         </section>
     </header>
@@ -188,8 +188,8 @@
             <h2 class="visually-hidden">Услуги</h2>
             <article>
                 <h3 class="service-title">доставка</h3>
-                <button class="service-buttons-item" type="button"></button>
-                <p class="service-buttons-description">Мы с удовольствием доставим ваш товар прямо
+                <button class="service-buttons-item" type="button">доставка</button>
+                <p class="service-buttons-text">Мы с удовольствием доставим ваш товар прямо
                     к вашему подъезду совершенно бесплатно! Ведь
                     мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 <img class="service-buttons-description" src="img\carrier.svg" width="136" height="164"
@@ -197,8 +197,8 @@
             </article>
             <article>
                 <h3 class="service-title">гарантия</h3>
-                <button class="service-buttons-item" type="button"></button>
-                <p class="service-buttons-description">Если из-за возгорания купленного у нас товара у вас
+                <button class="service-buttons-item" type="button">гарантия</button>
+                <p class="service-buttons-text">Если из-за возгорания купленного у нас товара у вас
                     сгорит дом — не переживайте, мы выдадим вам новый.
                     Товар, не дом, конечно же.</p>
                 <img class="service-buttons-description" src="img\garanty.svg" width="132" height="158"
@@ -206,8 +206,8 @@
             </article>
             <article>
                 <h3 class="service-title">кредит</h3>
-                <button class="service-buttons-item" type="button"></button>
-                <p class="service-buttons-description">Залезть в долговую яму стало проще!
+                <button class="service-buttons-item" type="button">кредит</button>
+                <p class="service-buttons-text">Залезть в долговую яму стало проще!
                     Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
                     Выгодные для банка, разумеется.</p>
                 <img class="service-buttons-description" src="img\credit.svg" width="156" height="188"
@@ -215,10 +215,10 @@
             </article>
         </section>
         <div class="delivery">
-            <p class="delivery-description"> <img class="delivery-description-icon" src="img\lorry.svg" width="125"
-                    height="100" alt="иконка доставки">Доставим редкий товар под заказ</p>
-            <a class="delivery-description-icon" href="#"><img class="delivery-order-link" src="img\exclamation.svg"
-                    width="40" height="40" alt="заказ доствки"></a>
+            <a class="delivery-description-title" href="#"><img class="delivery-description-icon" src="img\lorry.svg"
+                    width="125" height="100" alt="иконка доставки"><span class="delivery-description-text">Доставим
+                    редкий товар под заказ</span><img class="delivery-order-link" src="img\exclamation.svg" width="125"
+                    height="100" alt="заказ доставки"></a>
         </div>
         <section class="about">
             <h2 class="about-title">О нас</h2>
@@ -248,7 +248,7 @@
                 <li class="contacts-schedule-time">пн—пт: с 10:00 до 22:00</li>
                 <li class="contacts-schedule-time">сб—вс: с 10:00 до 19:00</li>
             </ul>
-            <a class="button" href="#"><img src="" alt="кнопка написать нам">Напишите нам</a>
+            <a class="button-mailing-link" href="#">Напишите нам</a>
         </section>
         <section class="mailling">
             <h2 class="mailling-title">Подпишитесь на рассылку</h2>
@@ -279,13 +279,13 @@
             <h2 class="footer-social-title visually-hidden">Социальные сети</h2>
             <ul class="footer-social-list">
                 <li class="footer-social-item"><a class="button" href="#"><img class="footer-social-link"
-                            src="img\logo-facebook.svg" width="40" height="40" alt="фейсбук"><span
+                            src="img\logo-facebook.svg" width="9" height="18" alt="фейсбук"><span
                             class="visually-hidden">фейсбук</span></a></li>
                 <li class="footer-social-item"><a class="button" href="#"><img class="footer-social-link"
-                            src="img\logo-instagram.svg" width="40" height="40" alt="инстаграм"><span
+                            src="img\logo-instagram.svg" width="16" height="16" alt="инстаграм"><span
                             class="visually-hidden">инстаграм</span></a></li>
                 <li class="footer-social-item"><a class="button" href="#"><img class="footer-social-link"
-                            src="img\logo-twitter.svg" width="40" height="40" alt="твиттер"><span
+                            src="img\logo-twitter.svg" width="15" height="14" alt="твиттер"><span
                             class="visually-hidden">твиттер</span></a></li>
             </ul>
             <a class="footer-made-link" href="https://htmlacademy.ru/"><img class="logo-academy"

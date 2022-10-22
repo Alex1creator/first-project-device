@@ -44,12 +44,17 @@ body {
     background-color: #FFE17F;
 }
 
-footer {
-    background-color: #444444;
+.header-link, .categories-products-link, .service-link, .about-link, .button-mailing-link, .footer-services-link {
+    text-decoration: none;
 }
 
-a {
-    text-decoration: none;
+footer {
+    background-color: #444444;
+    color: white;
+}
+
+.footer-services-link {
+    color: white;
 }
 
 .header-search {
@@ -68,7 +73,7 @@ a {
 .device-rating-number {
     font-family: "Rubik bold";
     font-size: 180px;
-    line-height: 30px;
+    line-height: 135px;
     color: white;
     background-color: #FFE17F;
 }
@@ -104,9 +109,41 @@ a {
     line-height: 50px;
 }
 
-.delivery-description {
+.service-buttons-item {
+    font-family: "Raleway ExtraBold";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    color:  black;
+    background-color: #FFE17F;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+/* hovers, focuses */
+
+.service-buttons-item:focus {
+    color: #FFE17F;
+    background-color: black;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.categories-products-link:hover, .about-link:hover, .button-mailing-link:hover {
+    background-color: #FFE17F
+}
+
+
+.service-buttons-text {
+    background-color: #F0F0F0; 
+}
+
+.delivery-description-text {
     font-size: 20px;
-    line-height: 24px;
+    line-height: 100px;
+    background-color: #F0F0F0;
+    text-align: center;
+    margin-bottom: 0px;
+    color: black;
 }
 
 .about-title {
@@ -181,6 +218,7 @@ a {
     font-style: normal;
     font-weight: 400;
     text-decoration: underline;
+    color: white;
 }
 
 .footer-social-link {
