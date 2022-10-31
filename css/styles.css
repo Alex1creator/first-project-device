@@ -39,9 +39,54 @@ body {
     font-weight: 800;
     line-height: 21px;
     color: black;
+    margin: 0;
 }
+
+/* header styles*/
 .page-header {
+    
+    width: 1160px;
+    height: 340px;
+    margin-top: 17px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #FFE17F;
+    outline-color: crimson;
+    outline-style: solid;
+}
+
+/*.page-header-container {
+    display: flex;
+    width: 1160px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #FFE17F;
+    outline-color: crimson;
+    outline-style: solid;
+    border-top: white solid 23px;
+} 
+*/
+
+.logo-header {
+    width: 145px;
+    margin-top: 17.39px;
+    margin-left: 60px;
+    outline-color: crimson;
+    outline-style: solid;
+}
+
+/*.header-container-logo {
+    width: 899px;
+    flex-grow: 1;
+}*/
+
+.header-link-entrance {
+    width: 231px;
+}
+
+.header-item {
+    width: 120px;
+    margin-left: auto;
 }
 
 .header-link, .categories-products-link, .service-link, .about-link, .button-mailing-link, .footer-services-link,
@@ -50,13 +95,9 @@ body {
     text-decoration: none;
 }
 
-footer {
-    background-color: #444444;
-    color: white;
-}
+.header-container-menu {
+    display: flex;
 
-.footer-services-link {
-    color: white;
 }
 
 .header-search {
@@ -64,12 +105,17 @@ footer {
     font-size: 16px;
     line-height: 20px;
     background-color: #FFE17F;
+    width: 517px;
+    margin-top: 35px;
+    margin-left: 60px;
+    display: inline;
 }
 
 .header-list {
     font-family: "Raleway ExtraBold";
     font-size: 18px;
     line-height: 30px;
+    display: flex;
 }
 
 .device-rating-number {
@@ -295,4 +341,13 @@ footer {
     line-height: 30px;
     font-style: normal;
     font-weight: 400;
+}
+
+footer {
+    background-color: #444444;
+    color: white;
+}
+
+.footer-services-link {
+    color: white;
 }
