@@ -42,6 +42,9 @@ body {
     margin: 0;
 }
 
+li {
+    list-style-type: none;
+}
 /* header styles*/
 .page-header {
     
@@ -89,10 +92,26 @@ body {
     margin: 0;
 }
 
-.header-link, .categories-products-link, .service-link, .about-link, .button-mailing-link, .footer-services-link,
+.header-link, .about-link, .button-mailing-link, .footer-services-link,
  .delivery-description-title {
     color: black;
     text-decoration: none;
+}
+
+.categories-products-link {
+    color: black;
+    text-decoration: none;
+    background-color: #FFE17F
+}
+
+.service-link {
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.2em;
+}
+
+.categories-products-link {
+    letter-spacing: 0.1em;
 }
 
 .header-container-menu {
@@ -143,6 +162,9 @@ width: 1160px;
     display: flex;
     width: 350px;
     margin-right: auto;
+    margin-bottom: 0;
+    align-items: center;
+    margin-top: 29px;
 }
 
 .service-list {
@@ -150,9 +172,46 @@ width: 1160px;
     width: 471px;
     margin-right: 60px;
     justify-content: space-between;
+    margin-bottom: 0;
+    margin-top: 45px;
 }
 
+.categories-products-menu {
+display: none;
+}
 
+.categories-products-list-button {
+margin-left: 21px;
+}
+
+.categories-products-symbol {
+margin-left: 41px;
+}
+
+.slider-image {
+ 
+width: 560px;
+height: 560px;
+
+}
+
+.index-product-item {
+    display: flex;
+    width: 1160px;
+    height: 560;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 211px;
+    top: 203px;
+}
+
+.index-product-slogan {
+    width: 560px;
+
+}
 
 .device-rating-number {
     font-family: "Rubik bold";
@@ -160,6 +219,7 @@ width: 1160px;
     line-height: 135px;
     color: white;
     background-color: #FFE17F;
+    margin: 0;
 }
 
 .index-slogan {
@@ -215,7 +275,7 @@ width: 1160px;
     letter-spacing: 0.2em;
 }
 
-.categories-products-link:hover, .about-link:hover, .button-mailing-link:hover {
+.about-link:hover, .button-mailing-link:hover {
     background-color: #FFE17F
 }
 
