@@ -86,7 +86,7 @@ body {
 
 .header-item {
     width: 120px;
-    margin-left: auto;
+    margin: 0;
 }
 
 .header-link, .categories-products-link, .service-link, .about-link, .button-mailing-link, .footer-services-link,
@@ -103,20 +103,56 @@ body {
 .header-search {
     font-family: "Rubik regular";
     font-size: 16px;
-    line-height: 20px;
+    line-height: 35px;
     background-color: #FFE17F;
     width: 517px;
-    margin-top: 35px;
+    margin-top: 26px;
     margin-left: 60px;
     display: inline;
+    border: black solid 2px;
+    border-radius: 22px;
+    outline-color: crimson;
+    outline-style: solid;
 }
 
 .header-list {
-    font-family: "Raleway ExtraBold";
+    font-family: "Rubik regular", sans-serif;
+    font-style: normal;
+    font-weight: 400;
     font-size: 18px;
     line-height: 30px;
     display: flex;
+    width: 510px;
+    margin-top: 35px;
+    padding: 0;
+    padding-left: 20px;
+    margin: 0;
+    margin-top: 30px;
+    margin-left: 10px;
+    outline-color: crimson;
+    outline-style: solid;
 }
+
+.categories-products-container {
+display: flex;
+width: 1160px;
+
+}
+ 
+.catalog-products-buttons {
+    display: flex;
+    width: 350px;
+    margin-right: auto;
+}
+
+.service-list {
+    display: flex;
+    width: 471px;
+    margin-right: 60px;
+    justify-content: space-between;
+}
+
+
 
 .device-rating-number {
     font-family: "Rubik bold";
