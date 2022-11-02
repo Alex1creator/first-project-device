@@ -222,6 +222,10 @@ height: 560px;
     margin: 0;
 }
 
+.index-gallery:nth-child(3) index-product-item {
+    display: none;
+}
+
 .index-slogan {
     font-size: 50px;
     line-height: 50px;
