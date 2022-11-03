@@ -1,28 +1,10 @@
 @font-face {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-display: swap;
-    src: url(fonts\Rubik-Bold.woff2) format(woff2),
-    url(fonts\Rubik-Bold.woff) format(woff);
-}
-
-@font-face {
-    font-family: "Raleway ExtraBold", sans-serif;
-    font-style: normal;
-    font-weight: 800;
-    font-display: swap;
-    src: url(fonts\Raleway-ExtraBold.woff2) format(woff2),
-    url(fonts\Raleway-ExtraBold.woff) format(woff);
-}
-
-@font-face {
     font-family: "Rubik regular", sans-serif;
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url(fonts\Rubik-Regular.woff2) format(woff2),
-    url(fonts\Rubik-Regular.woff2)  format(woff);
+    src: url(/fonts/Rubik-Regular.woff2) format(woff2),
+    url(/fonts/Rubik-Regular.woff2)  format(woff);
 }
 
 @font-face {
@@ -30,11 +12,12 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-src: url(fonts\Rubik-Bold.woff2) format(woff2),
-url(fonts\Rubik-Regular.woff)  format(woff);
+    src: url(/fonts\Rubik-Bold.woff2) format(woff2),
+    url(/fonts\Rubik-Bold.woff)  format(woff);
 }
+
 body {
-    font-family: "Raleway ExtraBold", sans-serif;
+    font-family: "Raleway ExtraBold";
     font-size: 18px;
     font-weight: 800;
     line-height: 21px;
@@ -60,18 +43,6 @@ li {
     outline-style: solid;
 }
 
-/*.page-header-container {
-    display: flex;
-    width: 1160px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    background-color: #FFE17F;
-    outline-color: crimson;
-    outline-style: solid;
-    border-top: white solid 23px;
-} 
-*/
-
 .logo-header {
     width: 145px;
     margin-top: 17.39px;
@@ -79,11 +50,6 @@ li {
     outline-color: crimson;
     outline-style: solid;
 }
-
-/*.header-container-logo {
-    width: 899px;
-    flex-grow: 1;
-}*/
 
 .header-link-entrance {
     width: 231px;
@@ -118,7 +84,6 @@ li {
 
 .header-container-menu {
     display: flex;
-
 }
 
 .header-search {
@@ -227,13 +192,8 @@ height: 560px;
     margin-top: 20px;
     margin-bottom:0;
     margin-right: 0;
-    margin-left: 362px;
+    margin-left: 300px;
 }
-/*
-.index-gallery:nth-child(3) index-product-item {
-    display: none;
-}
-*/
 
 p {
 margin: 0;
@@ -274,6 +234,29 @@ margin: 0;
 .device-characteristics-item {
     font-size: 36px;
     line-height: 30px;
+}
+
+.categories-products-list {
+    display: flex;
+    width: 1160px;
+    justify-content: space-between;
+    position: relative;
+    top: 396px;
+    padding-left: 0;
+    margin: 0 auto;
+  
+}
+
+.service-items {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    position: relative;
+    top: 301px;
+}
+
+.categories-products-item {
+    width: 160px;
 }
 
 .categories-products-title {

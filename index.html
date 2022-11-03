@@ -58,7 +58,7 @@
                 </div>
             </section>
             <section class="categories-products-menu">
-                <ul class="categories-products-list">
+                <ul class="categories-products-list-menu">
                     <li class="categories-products-item"><a class="categories-products-link" href="">виртуальная
                             реальность</a></li>
                     <li class="categories-products-item"><a class="categories-products-link" href="">фитнес-браслеты</a>
@@ -104,7 +104,7 @@
                     </table>
                 </figcaption>
             </figure>
-            <!--
+            <!-- -->
             <figure class="index-product-item">
                 <img class="slider-image" src="img\img-catalog\fitness-bracelet.png" width="560" height="560"
                     alt="фото фитнес-браслет">
@@ -148,9 +148,11 @@
                     <p><a class="categories-products-link" href="#">подробнее</a></p>
                 </figcaption>
             </figure>
-        -->
-            <button class="slider-button-sleder-prev" type="button">предыдущая фото</button>
-            <button class="slider-button-sleder-next" type="button">следующая фото</button>
+
+            <ul>
+                <button class="slider-button-sleder-prev" type="button">предыдущая фото</button>
+                <button class="slider-button-sleder-next" type="button">следующая фото</button>
+            </ul>
             <ol class="slider-pagination">
                 <li class="slider-pagination-item">
                     <button class="slider-pagination-button slider-pagination-button-current" type="button"><span
@@ -163,8 +165,8 @@
             </ol>
         </section>
         <section class="categories-products">
-            <h2 class="visually-hidden">Категории товаров</h2>
-            <ul>
+            <h2 class="visually-hidden" hidden>Категории товаров</h2>
+            <ul class="categories-products-list">
                 <li class="categories-products-item">
                     <a class="categories-products-link" href="">
                         <img src="img\virtual-goggle.svg" width="160" height="160" alt="товары виртуальной реальности">
@@ -204,9 +206,9 @@
             </ul>
         </section>
         <section class="service-buttons">
-            <h2 class="visually-hidden">Услуги</h2>
-            <article>
-                <h3 class="service-title">доставка</h3>
+            <h2 class="visually-hidden" hidden>Услуги</h2>
+            <article class="service-items">
+                <h3 class="service-title" hidden>доставка</h3>
                 <button class="service-buttons-item" type="button">доставка</button>
                 <p class="service-buttons-text">Мы с удовольствием доставим ваш товар прямо
                     к вашему подъезду совершенно бесплатно! Ведь
@@ -214,7 +216,8 @@
                 <img class="service-buttons-description" src="img\carrier.svg" width="136" height="164"
                     alt="Иконка курьера">
             </article>
-            <article>
+            <!--
+            <article class="service-items">
                 <h3 class="service-title">гарантия</h3>
                 <button class="service-buttons-item" type="button">гарантия</button>
                 <p class="service-buttons-text">Если из-за возгорания купленного у нас товара у вас
@@ -223,7 +226,7 @@
                 <img class="service-buttons-description" src="img\garanty.svg" width="132" height="158"
                     alt="Иконка гарантии">
             </article>
-            <article>
+            <article class="service-items">
                 <h3 class="service-title">кредит</h3>
                 <button class="service-buttons-item" type="button">кредит</button>
                 <p class="service-buttons-text">Залезть в долговую яму стало проще!
@@ -232,6 +235,7 @@
                 <img class="service-buttons-description" src="img\credit.svg" width="156" height="188"
                     alt="Иконка кредита">
             </article>
+            -->
         </section>
         <div class="delivery">
             <a class="delivery-description-title" href="#"><img class="delivery-description-icon" src="img\lorry.svg"
