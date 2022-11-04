@@ -76,7 +76,7 @@
             </section>
         </div>
     </header>
-    <main class="main-index">
+    <main class="main-index main-container">
         <h1 class="visually-hidden" hidden>Интеренет-магазин "Девайс"</h1>
         <section class="index-gallery">
             <h2 class="visually-hidden" hidden>Фото девайса</h2>
@@ -207,6 +207,7 @@
         </section>
         <section class="service-buttons">
             <h2 class="visually-hidden" hidden>Услуги</h2>
+
             <article class="service-items">
                 <h3 class="service-title" hidden>доставка</h3>
                 <button class="service-buttons-item" type="button">доставка</button>
@@ -238,53 +239,64 @@
                     alt="Иконка кредита">
             </article>
             -->
+            <div class="index-delivery">
+                <a class="delivery-description-title" href="#"><img class="delivery-description-icon"
+                        src="img\lorry.svg" width="125" height="100" alt="иконка доставки">
+                    <p class="delivery-description-text">доставим
+                        редкий товар под заказ</p>
+                    <img class="delivery-order-link" src="img\exclamation.svg" width="125" height="100"
+                        alt="заказ доставки">
+                </a>
+            </div>
         </section>
-        <div class="delivery">
-            <a class="delivery-description-title" href="#"><img class="delivery-description-icon" src="img\lorry.svg"
-                    width="125" height="100" alt="иконка доставки"><span class="delivery-description-text">Доставим
-                    редкий товар под заказ</span><img class="delivery-order-link" src="img\exclamation.svg" width="125"
-                    height="100" alt="заказ доставки"></a>
+        <div class="about-container">
+            <section class="about">
+                <h2 class="about-title">О нас</h2>
+                <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом
+                    из
+                    нас.</p>
+                <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
+                    компаниями:</p>
+                <ul class="about-list">
+                    <li class="about-item"><img class="about-icon" src="" alt="иконка списка"><span>Меловые линии</span>
+                    </li>
+                    <li class="about-item"><img class="about-icon" src="" alt="иконка списка"><span>СДИК</span></li>
+                    <li class="about-item"><img class="about-icon" src="" alt="иконка списка"><span>ТоксБерри</span>
+                    </li>
+                    <li class="about-item"><a class="about-link" href="#">подробнее о нас</a></li>
+                </ul>
+            </section>
+            <section class="contacts">
+                <h2 class="contacts-title">Контакты</h2>
+                <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.
+                    Заодно сможете проверить работоспособность покупки. </p>
+                <h3 class="contacts-subtitle">Интеренет-магазин<q>Девайс</q></h3>
+                <address class="contacts-address">
+                    <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+                    <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+                </address>
+                <h3 class="contacts-subtitle">Время работы</h3>
+                <ul class="contacts-schedule">
+                    <li class="contacts-schedule-time">пн—пт: с 10:00 до 22:00</li>
+                    <li class="contacts-schedule-time">сб—вс: с 10:00 до 19:00</li>
+                </ul>
+                <a class="button-mailing-link" href="#">Напишите нам</a>
+            </section>
         </div>
-        <section class="about">
-            <h2 class="about-title">О нас</h2>
-            <p class="about-description">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
-                нас.</p>
-            <p class="about-description">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
-                компаниями:</p>
-            <ul class="about-list">
-                <li class="about-item"><img class="about-icon" src="" alt="иконка списка"><span>Меловые линии</span>
-                </li>
-                <li class="about-item"><img class="about-icon" src="" alt="иконка списка"><span>СДИК</span></li>
-                <li class="about-item"><img class="about-icon" src="" alt="иконка списка"><span>ТоксБерри</span></li>
-                <li class="about-item"><a class="about-link" href="#">подробнее о нас</a></li>
-            </ul>
-        </section>
-        <section class="contacts">
-            <h2 class="contacts-title">Контакты</h2>
-            <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис.
-                Заодно сможете проверить работоспособность покупки. </p>
-            <h3 class="contacts-subtitle">Интеренет-магазин<q>Девайс</q></h3>
-            <address class="contacts-address">
-                <p class="contacts-address-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-                <a class="contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-            </address>
-            <h3 class="contacts-subtitle">Время работы</h3>
-            <ul class="contacts-schedule">
-                <li class="contacts-schedule-time">пн—пт: с 10:00 до 22:00</li>
-                <li class="contacts-schedule-time">сб—вс: с 10:00 до 19:00</li>
-            </ul>
-            <a class="button-mailing-link" href="#">Напишите нам</a>
-        </section>
         <section class="mailling">
-            <h2 class="mailling-title">Подпишитесь на рассылку</h2>
-            <p class="mailling-description">Еженедельный дайджест с обзорами новинок,
-                длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
-            <form class="mailing-form" action="https://echo.htmlacademy.ru/courses" method="post">
-                <input type="email" name="mailling-input" value="Ваш e-mail">
-                <input type="submit" name="mailling-input" value="подписаться">
-            </form>
-            <span class="mailling-description"><img src="img\status-success.svg" width="14" height="14"
-                    alt="Иконка бесплатно">Это бесплатно</span>
+            <div class="mailling-container">
+                <h2 class="mailling-title">Подпишитесь на рассылку</h2>
+                <p class="mailling-description">Еженедельный дайджест с обзорами новинок,
+                    длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+            </div>
+            <div class="mailling-form-container">
+                <form class="mailing-form" action="https://echo.htmlacademy.ru/courses" method="post">
+                    <input type="email" name="mailling-input" value="Ваш e-mail">
+                    <input type="submit" name="mailling-input" value="подписаться">
+                </form>
+                <span class="mailling-description"><img src="img\status-success.svg" width="14" height="14"
+                        alt="Иконка бесплатно">Это бесплатно</span>
+            </div>
         </section>
     </main>
     <footer class="page-footer">
