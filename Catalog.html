@@ -104,7 +104,7 @@
                                 убыванию</span></a>
                     </div>
                     <form class="filter-input" action="https://echo.htmlacademy.ru/" method="get">
-                        <fieldset class="catalog-filter-group">
+                        <fieldset class="catalog-filter-price">
                             <legend class="catalog-filter-title">Стоимость</legend>
                             <button class="range-toggle toggle-min" type="button"><span class="visually-hidden">изменить
                                     минимальную цену</span></button>
@@ -117,7 +117,7 @@
                                 <input class="catalog-filter-input" type="number" name="max-price">Руб
                             </label>
                         </fieldset>
-                        <fieldset class="catalog-filter-group">
+                        <fieldset class="catalog-filter-color">
                             <legend class="filter-input-color">Цвет</legend>
                             <ul class="filter-colors-list">
                                 <li class="filter-color-item">
@@ -147,7 +147,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <fieldset class="catalog-filter-group">
+                        <fieldset class="catalog-filter-bluetooth">
                             <legend class="filter-input-bluetooth">Bluetooth</legend>
                             <ul class="filter-bluetooth-list">
                                 <li class="filter-bluetooth-item"><label class="input-item"><input type="radio"
@@ -156,48 +156,48 @@
                                             name="bluetooth" value="bluetooth-no">Нет</label></li>
                             </ul>
                         </fieldset>
-                        <input type="submit" name="catalog-filter" value="показать">
+                        <input class="catalog-filter-button" type="submit" name="catalog-filter" value="показать">
                     </form>
+                    <ul class="product-list">
+                        <li class="product-card">
+                            <a class="product-card-link" href="#"><img class="product-card-image"
+                                    src="img\img-catalog\selfy-stick-lite.jpg" width="360" height="380"
+                                    alt="Любительская селфи-палка">
+                                <h3 class="product-card-title">Любительская селфи-палка</h3>
+                            </a>
+                            <b class="product-card-price">500 р</b>
+                            <a class="product-card-button button" href="#">Купить</a>
+                        </li>
+                        <li class="product-card">
+                            <a class="product-card-link" href="#"><img class="product-card-image"
+                                    src="img\img-catalog\selfy-stick-professional.jpg" width="360" height="380"
+                                    alt="Профессиональная селфи-палка">
+                                <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+                            </a>
+                            <b class="product-card-price">1500 р</b>
+                            <a class="product-card-button button" href="#">Купить</a>
+                        </li>
+                        <li class="product-card">
+                            <a class="product-card-link" href="#"><img class="product-card-image"
+                                    src="img\img-catalog\selfy-stick-waterproofe.png" width="360" height="380"
+                                    alt="Непотопляемая селфи-палка">
+                                <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+                            </a>
+                            <b class="product-card-price">2500 р</b>
+                            <a class="product-card-button button" href="#">Купить</a>
+                        </li>
+                        <li class="product-card">
+                            <a class="product-card-link" href="#"><img class="product-card-image"
+                                    src="img\img-catalog\selfy-stick-follow-me.jpg" width="360" height="380"
+                                    alt="Селфи-палка " следуй-за-мной"">
+                                <h3 class="product-card-title">Селфи-палка "следуй-за-мной"</h3>
+                            </a>
+                            <b class="product-card-price">1500 р</b>
+                            <a class="product-card-button button" href="#">Купить</a>
+                        </li>
+                    </ul>
                 </div>
             </section>
-            <ul class="product-list">
-                <li class="product-card">
-                    <a class="product-card-link" href="#"><img class="product-card-image"
-                            src="img\img-catalog\selfy-stick-lite.jpg" width="360" height="380"
-                            alt="Любительская селфи-палка">
-                        <h3 class="product-card-title">Любительская селфи-палка</h3>
-                    </a>
-                    <b class="product-card-price">500 р</b>
-                    <a class="product-card-button button" href="#">Купить</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#"><img class="product-card-image"
-                            src="img\img-catalog\selfy-stick-professional.jpg" width="360" height="380"
-                            alt="Профессиональная селфи-палка">
-                        <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-                    </a>
-                    <b class="product-card-price">1500 р</b>
-                    <a class="product-card-button button" href="#">Купить</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#"><img class="product-card-image"
-                            src="img\img-catalog\selfy-stick-waterproofe.png" width="360" height="380"
-                            alt="Непотопляемая селфи-палка">
-                        <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-                    </a>
-                    <b class="product-card-price">2500 р</b>
-                    <a class="product-card-button button" href="#">Купить</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#"><img class="product-card-image"
-                            src="img\img-catalog\selfy-stick-follow-me.jpg" width="360" height="380" alt="Селфи-палка "
-                            следуй-за-мной"">
-                        <h3 class="product-card-title">Селфи-палка "следуй-за-мной"</h3>
-                    </a>
-                    <b class="product-card-price">1500 р</b>
-                    <a class="product-card-button button" href="#">Купить</a>
-                </li>
-            </ul>
             <ul class="pagination">
                 <li class="pagination-item"><a class="pagination-link pagination-prev pagination-disable"><span
                             class="pagination-title">назад</span></a></li>

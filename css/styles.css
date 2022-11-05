@@ -564,12 +564,15 @@ margin: 0;
 .catalog-main-container {
     width: 1440px;
     margin: 0 auto;
+    background-color: #F0F0F0;
 }
 
 .catalog-filter-container {
     display: flex;
     flex-wrap: wrap;
     width: 1160px;
+    margin: 0 auto;
+    margin-top: 48px;
 }
 
 .catalog-title {
@@ -594,13 +597,52 @@ margin: 0;
     margin-right: 36px;
 }
 
+.filter-header-container {
+    display: flex;
+}
+
+.filter-input {
+    width: 320px;
+}
+
+.sorting-title {
+    margin-left: 20px;
+}
+
+.sorting-type {
+    align-self: center;
+}
+
 .filter-header {
     font-size: 16px;
     line-height: 19px;
     width: 320px;
 }
 
-.catalog-filter-title, .filter-input-color, .filter-input-bluetooth {
+.catalog-filter-price {
+    margin-top: 58px;
+    margin-left: 41px;
+}
+
+.catalog-filter-color {
+    margin-top: 0;
+    margin-left: 41px;
+}
+
+.catalog-filter-bluetooth {
+    margin-top: 86px;
+    margin-left: 41px;
+}
+
+.filter-input-color  {
+    font-family: "Rubik bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.catalog-filter-title, .filter-input-bluetooth {
     font-family: "Rubik bold";
     font-style: normal;
     font-weight: 700;
@@ -622,6 +664,24 @@ margin: 0;
     line-height: 18px;
     font-style: normal;
     font-weight: 400;
+}
+
+.catalog-filter-button {
+    margin-top: 29px;
+    margin-left: 126px;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 840px;
+    background-color: white;
+    justify-content: space-evenly;
+
+}
+
+.product-card {
+    margin-top: 70px;
 }
 
 .product-card-title {
