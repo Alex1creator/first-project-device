@@ -18,9 +18,7 @@
 
 html {
     height: 100%;
-    outline: 5px solid salmon;
-    outline-offset: -5px;
-}
+   }
 
 body {
     display: flex;
@@ -40,16 +38,19 @@ li {
     list-style-type: none;
 }
 
+ul {
+    padding-inline-start: 0;
+}
 
 /* header styles*/
 .page-header {
     
     width: 1160px;
-    height: 340px;
+    height: 222px;
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFE17F;
+    background: linear-gradient(white, white 16%, #FFE17F 16%, #FFE17F);
     outline-color: crimson;
     outline-style: solid;
 }
@@ -188,7 +189,7 @@ height: 560px;
     margin-bottom: 0;
     margin-top: 0;
     position: relative;
-    top: -151px;
+    top: -31px;
 }
 
 .index-product-slogan {
@@ -478,7 +479,7 @@ margin: 0;
     width: 1440px;
     margin: 0 auto;
     position: relative;
-    bottom: -410px;
+    bottom: -382px;
 
 }
 
@@ -559,22 +560,44 @@ margin: 0;
 }
 
 /* Стилизация каталога */
+
+.catalog-main-container {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.catalog-filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1160px;
+}
+
 .catalog-title {
     font-size: 50px;
     line-height: 50px;
+    margin-left: 200px;
+    margin-bottom: 0;
 }
 
 .breadcrumbs-list {
+    display: flex;
     font-family: "Rubik regular";
     font-size: 16px;
     line-height: 19px;
     font-style: normal;
     font-weight: 400;
+    margin-left: 200px;
+    margin-top: 10px;
+}
+
+.breadcrumbs-item {
+    margin-right: 36px;
 }
 
 .filter-header {
     font-size: 16px;
     line-height: 19px;
+    width: 320px;
 }
 
 .catalog-filter-title, .filter-input-color, .filter-input-bluetooth {
