@@ -263,7 +263,7 @@ margin: 0;
 
 .service-items {
     display: flex;
-    width: 1440px;
+    width: 1160px;
     height: 289px;
     margin: 0 auto;
     position: relative;
@@ -341,7 +341,7 @@ margin: 0;
     color: black;
     text-decoration: none;
     position: relative;
-    top: 154px;
+    top: 62px;
 }
 /* hovers, focuses */
 
@@ -379,7 +379,7 @@ margin: 0;
     width: 1160px;
     justify-content: space-between;
     position: relative;
-    top: 219px;
+    top: 138px;
 }
 
 .about {
@@ -445,15 +445,16 @@ margin: 0;
     width: 1160px;
     margin: 0 auto;
     position: relative;
-    top: 227px;
+    top: 193px;
 }
 
 .mailling-form-container {
     display: flex;
+    justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
     position: relative;
-    top: 329px;
+    top: 348px;
 }
 
 .mailling-title {
@@ -476,9 +477,38 @@ margin: 0;
 .page-footer {
     width: 1440px;
     margin: 0 auto;
+    position: relative;
+    bottom: -410px;
 
 }
 
+.logo-footer-container {
+    width: 1160px;
+    margin-top: 61px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts-address-container {
+    display: flex;
+    width: 1160px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 21px;
+}
+
+.footer-services {
+    display: flex;
+    width: 444px;
+    justify-content: space-between;
+    padding-inline-start: 0;
+    text-transform: uppercase;
+}
+
+.contacts-address {
+    width: 239px;
+    margin-right: 112px;
+}
 .footer-address-text {
     font-family: "Rubik regular";
     font-size: 16px;
@@ -495,11 +525,37 @@ margin: 0;
     font-weight: 400;
     text-decoration: underline;
     color: white;
+    margin-left: auto;
+}
+
+.footer-social-container {
+    display: flex;
+    width: 1160px;
+    margin-top: 41px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 41px;
+    }
+
+.footer-social-list {
+    display: flex;
+    margin-left: 115px;
+    margin-top: 0;
+    width: 150px;
+    flex-grow: 1;
+    padding-inline-start: 0;
+    justify-content: center;
+    align-self: flex-start;
 }
 
 .footer-social-link {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 20px;
+}
+
+.footer-social-item {
+    margin-left: 7.5px;
+    margin-right: 7.5px;
 }
 
 /* Стилизация каталога */
