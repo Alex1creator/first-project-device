@@ -16,14 +16,9 @@
     url(/fonts\Rubik-Bold.woff)  format(woff);
 }
 
-html {
-    height: 100%;
-   }
-
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100%;
     width: 1440px;
     font-family: "Raleway ExtraBold";
     font-size: 18px;
@@ -188,8 +183,6 @@ height: 560px;
     margin-right: auto;
     margin-bottom: 0;
     margin-top: 0;
-    position: relative;
-    top: -31px;
 }
 
 .index-product-slogan {
@@ -213,16 +206,14 @@ height: 560px;
 
 p {
 margin: 0;
-
 }
+
 .index-slogan {
     font-style: normal;
     font-weight: 800;
     font-size: 50px;
     line-height: 50px;
     width: 560px;
-    position: relative;
-    top: -28px; left: -12px;
     margin: 0;
     margin-left: auto;
     padding-left: 14px;
@@ -256,8 +247,6 @@ margin: 0;
     display: flex;
     width: 1160px;
     justify-content: space-between;
-    position: relative;
-    top: -177px;
     padding-left: 0;
     margin: 0 auto;
 }
@@ -267,8 +256,6 @@ margin: 0;
     width: 1160px;
     height: 289px;
     margin: 0 auto;
-    position: relative;
-    top: -47px;
     background: #F0F0F0;
 }
 
@@ -328,12 +315,6 @@ margin: 0;
     margin-top: 15px;
 }
 
-.index-delivery {
-    
-    
-    
-}
-
 .delivery-description-title {
     display: flex;
     width: 1160px;
@@ -341,8 +322,6 @@ margin: 0;
     margin: 0 auto;
     color: black;
     text-decoration: none;
-    position: relative;
-    top: 62px;
 }
 /* hovers, focuses */
 
@@ -379,8 +358,6 @@ margin: 0;
     margin: 0 auto;
     width: 1160px;
     justify-content: space-between;
-    position: relative;
-    top: 138px;
 }
 
 .about {
@@ -445,8 +422,6 @@ margin: 0;
     display: flex;
     width: 1160px;
     margin: 0 auto;
-    position: relative;
-    top: 193px;
 }
 
 .mailling-form-container {
@@ -454,8 +429,6 @@ margin: 0;
     justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
-    position: relative;
-    top: 348px;
 }
 
 .mailling-title {
@@ -478,10 +451,7 @@ margin: 0;
 .page-footer {
     width: 1440px;
     margin: 0 auto;
-    position: relative;
-    bottom: -382px;
-
-}
+    }
 
 .logo-footer-container {
     width: 1160px;
@@ -564,7 +534,7 @@ margin: 0;
 .catalog-main-container {
     width: 1440px;
     margin: 0 auto;
-    background-color: #F0F0F0;
+    background: linear-gradient(white, white 118px, #F0F0F0 118px, #F0F0F0);
 }
 
 .catalog-filter-container {
@@ -572,7 +542,8 @@ margin: 0;
     flex-wrap: wrap;
     width: 1160px;
     margin: 0 auto;
-    margin-top: 48px;
+    margin-top: 40px;
+    padding-top: 8px;
 }
 
 .catalog-title {
@@ -599,6 +570,7 @@ margin: 0;
 
 .filter-header-container {
     display: flex;
+    margin-bottom: 35px;
 }
 
 .filter-input {
@@ -617,6 +589,7 @@ margin: 0;
     font-size: 16px;
     line-height: 19px;
     width: 320px;
+    margin: 0;
 }
 
 .catalog-filter-price {
@@ -677,12 +650,13 @@ margin: 0;
     width: 840px;
     background-color: white;
     justify-content: space-evenly;
-    margin-top: 26px;
+    margin-top: 0px;
     margin-bottom: 0;
+    padding-top: 27px;
 }
 
 .product-card {
-    margin-top: 44px;
+    margin-top: 45px;
 }
 
 .product-card-title {
@@ -691,6 +665,14 @@ margin: 0;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+    width: 226px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.product-card-container {
+    display: flex;
+    margin-top: 29px;
 }
 
 .product-card-price {
@@ -699,6 +681,10 @@ margin: 0;
     line-height: 21px;
     font-style: normal;
     font-weight: 400;
+    width: 63px;
+    margin-left: auto;
+    margin-top: 0;
+    text-align: right;
 }
 
 .pagination-container {
