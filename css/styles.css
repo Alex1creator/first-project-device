@@ -3,8 +3,8 @@
     font-style: normal;
     font-weight: 400;
     font-display: swap;
-    src: url("/fonts/Rubik-Regular.woff2") format("woff2"),
-    url("/fonts/Rubik-Regular.woff2")  format("woff");
+    src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
+    url("../fonts/Rubik-Regular.woff")  format("woff");
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-style: normal;
     font-weight: 700;
     font-display: swap;
-    src: url("/fonts/Rubik-Bold.woff2") format("woff2"),
-    url("/fonts/Rubik-Bold.woff")  format("woff");
+    src: url("../fonts/Rubik-Bold.woff2") format("woff2"),
+    url("../fonts/Rubik-Bold.woff")  format("woff");
 }
 
 @font-face {
@@ -21,8 +21,8 @@
     font-style: normal;
     font-weight: 800;
     font-display: swap;
-    src: url("/fonts/Raleway-ExtraBold.woff2") format("woff2"),
-    url("/fonts/Raleway-ExtraBold.woff")  format("woff");
+    src: url("../fonts/Raleway-ExtraBold.woff2") format("woff2"),
+    url("../fonts/Raleway-ExtraBold.woff")  format("woff");
 }
 
 body {
@@ -236,9 +236,7 @@ margin: 0;
     width: 560px;
     margin: 0;
     margin-left: auto;
-    padding-left: 14px;
-    letter-spacing: -0.06em;
-}
+    }
 
 .index-slogan-description {
     font-family: "Rubik-regular";
