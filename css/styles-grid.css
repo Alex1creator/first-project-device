@@ -630,7 +630,7 @@ margin: 0;
 .filter-input-container {
     display: grid;
     width: 1160px;
-    grid-template-columns: 320px auto;
+    grid-template-columns: 320px 840px;
 }
 
 .catalog-filter-price {
@@ -687,20 +687,23 @@ margin: 0;
 
 .product-list {
     display: grid;
-    grid-template-columns:  360px  360px ;
+    grid-template-columns: 360px  360px;
     row-gap: 44px;
     column-gap: 40px;
-    width: 840px;
+    width: 760px;
     background-color: white;
     margin-bottom: 0;
     margin-top: 0;
-    padding-top: 0;
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 70px;
+    padding-left: 40px;
+    padding-right: 40px;
+    list-style-type: none; 
 }
 
 .product-card {
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    width: 360px;
 }
 
 .product-card-title {
