@@ -71,17 +71,17 @@ ul {
     width: 145px;
     margin-top: 17.39px;
     margin-left: 60px;
-    outline-color: crimson;
-    outline-style: solid;
 }
 
 .header-link-entrance {
-    width: 231px;
+    width: 200px;
+    margin-right: 54px;
 }
 
-.header-item {
+.header-item-entrance {
     width: 120px;
     margin: 0;
+    padding-right: 10px;
 }
 
 .header-link, .about-link, .footer-services-link {
@@ -92,17 +92,15 @@ ul {
 .categories-products-link {
     color: black;
     text-decoration: none;
-    background-color: #FFE17F
+    background-color: #FFE17F;
+    letter-spacing: 0.2em;
+    padding-right: 20px;
 }
 
 .service-link {
     color: black;
     text-decoration: none;
     letter-spacing: 0.2em;
-}
-
-.categories-products-link {
-    letter-spacing: 0.1em;
 }
 
 .header-container-menu {
@@ -114,14 +112,38 @@ ul {
     font-size: 16px;
     line-height: 35px;
     background-color: #FFE17F;
-    width: 517px;
+    width: 514px;
     margin-top: 26px;
     margin-left: 60px;
     display: inline;
+    
+    padding: 0;
+}
+
+.header-search-window {
+    width: 359px;
+    padding-right: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    box-sizing: border-box;
     border: black solid 2px;
-    border-radius: 22px;
-    outline-color: crimson;
-    outline-style: solid;
+    border-bottom-left-radius: 22px;
+    border-top-left-radius: 22px;
+    border-right: 0;
+    margin: 0;
+}
+
+.header-search-btn{
+    padding-left: 30px;
+    padding-right: 79px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    margin: 0;
+    border-left: black solid 2px;
+    border-bottom-right-radius: 22px;
+    border-top-right-radius: 22px;
 }
 
 .header-list {
@@ -138,8 +160,14 @@ ul {
     margin: 0;
     margin-top: 30px;
     margin-left: 10px;
-    outline-color: crimson;
-    outline-style: solid;
+}
+
+.header-item-icon {
+    margin-right: 7px;
+}
+
+.header-item-basket {
+    margin-left: 21px;
 }
 
 /* main основное содержание */
@@ -156,11 +184,11 @@ width: 1160px;
  
 .catalog-products-buttons {
     display: flex;
-    width: 350px;
+    width: 400px;
     margin-right: auto;
     margin-bottom: 0;
     align-items: center;
-    margin-top: 29px;
+    margin-top: 27px;
 }
 
 .service-list {
@@ -177,11 +205,11 @@ display: none;
 }
 
 .categories-products-list-button {
-margin-left: 21px;
+margin-left: 60px;
 }
 
 .categories-products-symbol {
-margin-left: 41px;
+margin: 0;
 }
 
 .slider-image {
@@ -242,6 +270,7 @@ margin: 0;
     width: 560px;
     margin: 0;
     margin-left: auto;
+    margin-bottom: 27px;
     }
 
 .index-slogan-description {
