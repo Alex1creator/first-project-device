@@ -58,13 +58,13 @@ ul {
 
 /* header styles*/
 .page-header {
-    
     width: 1160px;
     /*height: 222px;*/
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
     background: linear-gradient(white, white 40px, #FFE17F 40px, #FFE17F);
+    z-index: 1;
 }
 
 .logo-header {
@@ -73,9 +73,22 @@ ul {
     margin-left: 60px;
 }
 
+.logo-header:hover {
+    opacity: 0.5;
+}
+
+.logo-header:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.logo-header:active {
+    opacity: 0.3;
+}
+
 .header-link-entrance {
     width: 200px;
-    margin-right: 54px;
+    margin-right: 57px;
 }
 
 .header-item-entrance {
@@ -105,45 +118,99 @@ ul {
 
 .header-container-menu {
     display: flex;
+    width: 1040px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .header-search {
-    font-family: "Rubik-regular";
-    font-size: 16px;
-    line-height: 35px;
+    display: flex;
     background-color: #FFE17F;
-    width: 514px;
+    width: 530px;
     margin-top: 26px;
-    margin-left: 60px;
-    display: inline;
-    
     padding: 0;
 }
 
+.header-search-container {
+    
+}
+
 .header-search-window {
-    width: 359px;
+    width: 357px;
     padding-right: 0;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 0;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 47px;
     box-sizing: border-box;
     border: black solid 2px;
-    border-bottom-left-radius: 22px;
-    border-top-left-radius: 22px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
     border-right: 0;
     margin: 0;
+    background-color: #FFE17F;
+    background-image: url("../img/magnifier.svg");
+    background-repeat: no-repeat;
+    background-position: 16px 8px;
+    font-family: "Rubik-regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .header-search-btn{
-    padding-left: 30px;
-    padding-right: 79px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-left: 55px;
+    padding-right: 53px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     box-sizing: border-box;
     margin: 0;
+    background-color: #FFE17F;
     border-left: black solid 2px;
-    border-bottom-right-radius: 22px;
-    border-top-right-radius: 22px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+    font-family: "Rubik-regular";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.header-search-btn:hover {
+    color: white;
+    background-color: black;
+ }
+
+.header-search-btn:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+    border: black solid 2px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.header-search-btn:active {
+    background-color: black;
+    color: #4D4D4D;
+    outline: none;
+}
+
+.header-search-btn:disabled {
+    background-color: #FFE17F;
+    opacity: 0.3;
+}
+
+.header-search-window:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+    z-index: 1;
+}
+
+
+.header-search-window:disabled {
+    border: #4D4D4D solid 2px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #4D4D4D;
+    
 }
 
 .header-list {
@@ -153,23 +220,25 @@ ul {
     font-size: 18px;
     line-height: 30px;
     display: flex;
-    width: 510px;
+    width: 496px;
     margin-top: 35px;
     padding: 0;
-    padding-left: 20px;
     margin: 0;
     margin-top: 30px;
-    margin-left: 10px;
 }
 
 .header-item-icon {
     margin-right: 7px;
+    vertical-align: middle;
 }
 
 .header-item-basket {
-    margin-left: 21px;
+    margin-left: auto;
 }
 
+.categories-products-img {
+    vertical-align: middle;
+}
 /* main основное содержание */
 
 .main-container {
@@ -222,6 +291,7 @@ margin-left: 60px;
 
 .categories-products-symbol {
 margin: 0;
+padding-top: 3px;
 }
 
 .slider-image {
@@ -299,6 +369,8 @@ margin: 0;
     margin: 0;
     margin-left: auto;
     margin-bottom: 31px;
+    position: relative;
+    z-index: 1;
     }
 
 .index-slogan-description {
