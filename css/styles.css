@@ -56,6 +56,10 @@ ul {
     padding-inline-start: 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
 /* header styles*/
 .page-header {
     width: 1160px;
@@ -97,7 +101,13 @@ ul {
     padding-right: 10px;
 }
 
-.header-link, .about-link, .footer-services-link {
+.header-link {
+    color: black;
+    text-decoration: none;
+    padding-bottom: 2px;
+}
+
+.about-link, .footer-services-link {
     color: black;
     text-decoration: none;
 }
@@ -129,10 +139,6 @@ ul {
     width: 530px;
     margin-top: 26px;
     padding: 0;
-}
-
-.header-search-container {
-    
 }
 
 .header-search-window {
@@ -312,8 +318,12 @@ height: 560px;
 
 .slider-pagination {
     position: absolute;
-    top: 200px;
-    right: 50px;
+    top: 333px;
+    right: 171px;
+}
+
+.slider-pagination-button {
+    padding: 4px;
 }
 
 .index-product-item {
@@ -371,19 +381,51 @@ margin: 0;
     margin-bottom: 31px;
     position: relative;
     z-index: 1;
+    padding-top: 3px;
     }
 
 .index-slogan-description {
     font-family: "Rubik-regular";
     font-size: 18px;
     line-height: 30px;
-    margin-bottom: 60px;
+    margin-bottom: 51px;
 }
 
 .about-device-link {
     margin-top: 0;
     margin-bottom: 58px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding-top: 10px;
+    width: 220px;
+    text-align: center;
+    padding-bottom: 9px;
+    background: linear-gradient(white, white 16px, #FFE17F 16px, #FFE17F 24px, white 24px, white);
 }
+
+.about-device-link a {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-left: 39px;
+    padding-right: 36px;
+}
+
+.about-device-link:hover {
+    background: #FFE17F;
+}
+
+.about-device-link a:focus {
+    outline: 2px solid #AF4FFF;
+}
+
+.about-device-link:active {
+    background: #FFCC33;
+}
+
+.about-device-link:disabled {
+    opacity: 0.5;
+}
+
 .device-characteristics {
     font-family: "Rubik-regular";
     font-size: 16px;
@@ -404,6 +446,14 @@ margin: 0;
 .device-characteristics-item td {
     padding-right: 56px;
     padding-bottom: 11px;
+}
+
+.index-gallery figure:nth-of-type(2) {
+    display: none;
+}
+
+.index-gallery figure:nth-of-type(3) {
+    display: none;
 }
 
 .categories-products-list {
