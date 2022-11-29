@@ -291,6 +291,11 @@ width: 1160px;
 display: none;
 }
 
+.categories-products-buttons {
+    margin-bottom: 82px;
+}
+
+
 .categories-products-list-button {
 margin-left: 60px;
 }
@@ -408,7 +413,7 @@ margin: 0;
 
 .about-device-link {
     margin-top: 0;
-    margin-bottom: 58px;
+    margin-bottom: 46px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     padding-top: 10px;
@@ -482,9 +487,9 @@ margin: 0;
 .service-items {
     display: flex;
     width: 1160px;
-    height: 289px;
     margin: 0 auto;
     margin-bottom: 109px;
+    padding-top: 64px;
 }
 
 .categories-products-item {
@@ -517,9 +522,9 @@ margin: 0;
 .service-buttons {
     width: 1440px;
     margin: 0 auto;
-    margin-top: 146px;
     margin-bottom: 75px;
-    background: linear-gradient(white, white 39px, #F0F0F0 39px, #F0F0F0 328px, white 328px, white);
+    background: linear-gradient(white, white 100px, #F0F0F0 100px, #F0F0F0 391px, white 391px, white);
+    position: relative;
 }
 
 .service-buttons-item {
@@ -535,13 +540,25 @@ margin: 0;
     width: 280px;
     height: 40px;
     text-align: left;
+    padding-left: 20px;
+}
+
+.service-items::before {
+    content: "";
+    width: 7px;
+    height: 319px;
+    background: black;
+    position: absolute;
+    top: 0px;
+    left: 420px;
 }
 
 .service-buttons-title {
     width: 452px;
-    margin-left: 123px;
+    /*margin-left: 123px;*/
+    border-left: 7px solid black;
+    padding-left: 123px;
     font-size: 50px;
-    margin-bottom: 18px;
     padding-top: 23px;
 }
 
