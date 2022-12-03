@@ -418,7 +418,6 @@ margin: 0;
     text-transform: uppercase;
     padding-top: 10px;
     width: 220px;
-    text-align: center;
     padding-bottom: 9px;
     background: linear-gradient(white, white 16px, #FFE17F 16px, #FFE17F 24px, white 24px, white);
 }
@@ -525,7 +524,7 @@ margin: 0;
 .service-buttons {
     width: 1440px;
     margin: 0 auto;
-    margin-bottom: 68px;
+    margin-bottom: 69px;
     background: linear-gradient(white, white 104px, #F0F0F0 104px, #F0F0F0 391px, white 391px, white);
     position: relative;
 }
@@ -640,11 +639,6 @@ margin: 0;
     letter-spacing: 0.2em;
 }
 
-.button-mailing-link:hover {
-    background-color: #FFE17F
-}
-
-
 
 .delivery-description-text {
     font-family: "Raleway ExtraBold";
@@ -666,7 +660,7 @@ margin: 0;
     margin: 0 auto;
     width: 1160px;
     justify-content: space-between;
-    margin-bottom: 29px;
+    margin-bottom: 73px;
 }
 
 .about {
@@ -678,9 +672,26 @@ margin: 0;
 }
 
 .button-mailing-link {
-    color: black;
-    text-decoration: none;
+    width: 235px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background: linear-gradient(white, white 16px, #FFE17F 16px, #FFE17F 24px, white 24px, white);
+    margin: 0;
+    margin-left: 14px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 23px;
 }
+
+.button-mailing-link a {
+    padding: 10px;
+}
+
+.button-mailing-link:hover {
+    background: #FFE17F
+}
+
+
 .about-title {
     font-size: 50px;
     line-height: 50px;
@@ -732,27 +743,40 @@ margin: 0;
 }
 
 .about-link {
-    display: block;
     width: 270px;
-    height: 40px;
-    color: black;
-    text-decoration: none;
-    padding-left: 25px;
     background: linear-gradient(white, white 16px, #FFE17F 16px, #FFE17F 24px, white 24px, white);
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    padding-top: 9px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.about-link a {
+    padding-left: 24px;
+    padding-right: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .about-link:hover {
-    background-color: #FFE17F
+    background: #FFE17F
 }
 
 .contacts-title {
     font-size: 50px;
     line-height: 50px;
     margin: 0;
-    padding-left: 10px;
+    padding-left: 14px;
+    margin-bottom: 45px;
+}
+
+.contacts-title::before {
+    content: "";
+    width: 84px;
+    height: 7px;
+    display: block;
+    background: black;
+    margin-bottom: 43px;
 }
 
 .contacts-description {
@@ -761,16 +785,21 @@ margin: 0;
     line-height: 30px;
     font-style: normal;
     font-weight: 400;
-    padding-top: 15px;
+    padding-left: 14px;
+    width: 505px;
+    margin-bottom: 31px;
 }
 
 .contacts-subtitle {
     font-family: "Rubik-bold";
     font-size: 24px;
     line-height: 30px;
+    margin: 0;
+    margin-bottom: 15px;
+    padding-left: 14px;
 }
 
-.contacts-address-text, .contacts-address-phone, .mailling-description {
+.contacts-address-text, .contacts-address-phone {
     font-family: "Rubik-regular";
     font-size: 18px;
     line-height: 30px;
@@ -782,7 +811,7 @@ margin: 0;
     display: flex;
     width: 1160px;
     margin: 0 auto;
-    margin-bottom: 100px;
+    margin-bottom: 143px;
 }
 
 .mailling-form-container {
@@ -790,11 +819,26 @@ margin: 0;
     justify-content: space-between;
     width: 1160px;
     margin: 0 auto;
+    padding-bottom: 55px;
 }
 
 .mailling-title {
     font-size: 50px;
     line-height: 50px;
+    margin: 0;
+    margin-right: 252px;
+    padding-left: 7px;
+    width: 348px;
+}
+
+.mailling-description {
+    font-family: "Rubik-regular";
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    width: 527px;
+    padding-top: 10px;
 }
 
 .contacts-schedule {
@@ -803,9 +847,63 @@ margin: 0;
     line-height: 30px;
     font-style: normal;
     font-weight: 400;
-    margin-bottom: 38px;
+    margin: 0;
+    margin-bottom: 28px;
+    padding-left: 14px;
 }
 
+.mailling-on {
+background: #F0F0F0;
+padding-top: 63px;
+}
+
+.mailing-form {
+    display: flex;
+    width: 823px;
+}
+
+.mailing-form input:first-of-type {
+    font-family: "Rubik-regular";
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    width: 537px;
+    border: none;
+    border-bottom: 3px solid #CECECE;
+    padding-left: 18px;
+    background: #F0F0F0;
+}
+
+.mailing-form input:last-of-type {
+    font-family: "Raleway ExtraBold";
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 21px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    width: 253px;
+    border: 3px solid #CECECE;
+    padding: 15px 39px;
+}
+
+.mailling-free {
+    font-family: "Rubik-regular";
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    width: 165px;
+    padding-top: 14px
+}
+
+.mailling-free img {
+    padding-left: 3px;
+}
+
+.free {
+    padding-left: 18px;
+}
 
 /* Footer */
 
@@ -819,27 +917,47 @@ margin: 0;
     margin-top: 61px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 33px;
 }
 
 .contacts-address-container {
     display: flex;
     width: 1160px;
     margin: 0 auto;
-    justify-content: center;
-    margin-top: 21px;
+    margin-bottom: 28px;
+}
+
+.footer-contacts-address {
+    font-family: "Rubik-regular";
+    font-size: 16px;
+    line-height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    width: 262px;
+    margin: 0;
+    margin-bottom: 20px;
+    margin-right: 87px;
 }
 
 .footer-services {
     display: flex;
-    width: 444px;
+    width: 450px;
     justify-content: space-between;
     padding-inline-start: 0;
     text-transform: uppercase;
+    letter-spacing: 0.2em;
+    margin: 0;
+    margin-top: 4px;
 }
 
 .contacts-address {
-    width: 239px;
-    margin-right: 112px;
+    font-family: "Rubik-regular";
+    font-size: 18px;
+    line-height: 30px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 14px;
+    margin-bottom: 30px;
 }
 .footer-address-text {
     font-family: "Rubik-regular";
@@ -858,25 +976,34 @@ margin: 0;
     text-decoration: underline;
     color: white;
     margin-left: auto;
+    padding-top: 7px;
 }
 
 .footer-social-container {
     display: flex;
     width: 1160px;
-    margin-top: 41px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 41px;
     }
 
+.footer-social-list::before {
+    content: "";
+    width: 80px;
+    height: 7px;
+    background: #FFC700;
+    align-self: center;
+    display: inline;
+    margin-right: 420px;
+}
+
+
 .footer-social-list {
     display: flex;
-    margin-left: 115px;
     margin-top: 0;
     width: 150px;
     flex-grow: 1;
     padding-inline-start: 0;
-    justify-content: center;
     align-self: flex-start;
     flex-wrap: wrap;
 }
