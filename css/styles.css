@@ -63,7 +63,6 @@ a {
 /* header styles*/
 .page-header {
     width: 1160px;
-    /*height: 222px;*/
     margin-top: 0;
     margin-left: auto;
     margin-right: auto;
@@ -252,9 +251,10 @@ a {
 }
 
 .categories-products-container {
-display: flex;
-width: 1160px;
-
+    display: flex;
+    width: 1160px;
+    flex-wrap: wrap;
+    position: relative;
 }
  
 .catalog-products-buttons {
@@ -287,9 +287,49 @@ width: 1160px;
     margin-left: 48px;
 }
 
-.categories-products-menu {
+.categories-products-list-menu {
 display: none;
 }
+
+.catalog-products-buttons:hover {
+    cursor: pointer;
+}
+
+.catalog-products-buttons:active + .service + .categories-products-list-menu {
+    display: grid;
+    width: 1103px;
+    grid-template-columns: 252px 211px 211px;
+    grid-template-areas: "cat-1 cat-2 cat-3" "cat-4 cat-5 cat-6" "cat-7 cat-8 cat-9";
+    margin: 0;
+    margin-top: 6px;
+    padding-left: 57px;
+    padding-bottom: 40px;
+    position: absolute;
+    top: 86px;
+    background: #FFE17F;
+    z-index: 1;
+    }
+
+.categories-products-item-menu {
+    font-family: "Rubik-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    width: 222px;
+    margin-right: 26px;
+    padding: 2px;
+    margin-bottom: 14px;
+}
+
+.categories-products-list-menu .categories-products-item-menu:nth-child(6) {
+    grid-area: cat-7;
+}
+
+.categories-products-item-menu a {
+    letter-spacing: 0;
+}
+
 
 .categories-products-buttons {
     margin-bottom: 82px;
@@ -303,6 +343,11 @@ margin-left: 60px;
 .categories-products-symbol {
 margin: 0;
 padding-top: 3px;
+}
+
+
+.categories-products-symbol:hover {
+
 }
 
 .slider-image {
@@ -348,7 +393,7 @@ height: 560px;
 
 .index-product-item {
     position: relative;
-    top: -16px;
+    top: -19px;
     display: flex;
     justify-content: space-between;
     width: 1160px;
@@ -398,9 +443,8 @@ margin: 0;
     width: 560px;
     margin: 0;
     margin-left: auto;
-    margin-bottom: 31px;
+    margin-bottom: 27px;
     position: relative;
-    z-index: 1;
     padding-top: 3px;
     }
 
@@ -501,6 +545,17 @@ margin: 0;
     width: 160px;
 }
 
+.categories-products-img {
+    font-family: "Raleway ExtraBold";
+    font-size: 18px;
+    font-weight: 800;
+    color: black;
+    line-height: 24px;
+    margin: 0;
+    padding-top: 26px;
+    letter-spacing: -0.02em;
+}
+
 .categories-products-title {
     font-family: "Raleway ExtraBold";
     font-size: 18px;
@@ -508,7 +563,8 @@ margin: 0;
     color: black;
     line-height: 24px;
     margin: 0;
-    padding-top: 30px;
+    letter-spacing: 0.2em;
+    padding-right: 19px;
 }
 
 .service-title {

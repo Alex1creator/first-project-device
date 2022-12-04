@@ -10,15 +10,12 @@
 
 <body class="site-device">
     <header class="page-header">
-
         <img class="logo-header" src="img\logo-header.svg" width="145" height="36"
             alt="Логотип Интеренет-магазин Девайс">
         <div class="header-container-menu">
             <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="post">
-
                 <input class="header-search-window" type="text" name="search-form" value="Поиск по сайту" size="50">
                 <input class="header-search-btn" type="submit" name="search-form" value="Найти">
-
             </form>
             <nav>
                 <ul class="header-list">
@@ -40,13 +37,23 @@
         </div>
         <section class="categories-products">
             <div class="categories-products-container">
-                <h2 class="categories-products-title visually-hidden" hidden>каталог товаров</h2>
                 <ul class="catalog-products-buttons">
-                    <li class="categories-products-list-button"><a class="categories-products-link"
-                            href="Catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
-                    <li class="categories-products-symbol"><a class="open-categories-products-list" href=""><img
-                                class="categories-products-img" src="img\plus-catalog.svg" width="50" height="50"
-                                alt="Иконка открытия каталога"></a></li>
+                    <li class="categories-products-list-button">
+                        <h2 class="categories-products-title">КАТАЛОГ ТОВАРОВ</h2>
+                    </li>
+                    <li class="categories-products-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                            height="51" fill="none">
+                            <circle cx="25" cy="25.4" r="24" stroke="#000" stroke-width="2" opacity=".3" />
+                            <g clip-path="url(#a)" opacity=".3">
+                                <path fill="#000" d="M33 24.4h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M17 17.4h16v16H17z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </li>
                 </ul>
                 <section class="service">
                     <h2 class="visually-hidden" hidden>Услуги</h2>
@@ -56,29 +63,29 @@
                         <li class="service-item"><a class="service-link" href="#">КОНТАКТЫ</a></li>
                     </ul>
                 </section>
+                <ul class="categories-products-list-menu">
+                    <li class="categories-products-item-menu"><a class="categories-products-link" href="">Виртуальная
+                            реальность</a></li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link"
+                            href="">Фитнес-браслеты</a>
+                    </li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link"
+                            href="">Квадрокоптеры</a>
+                    </li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link" href="">Моноподы для
+                            селфи</a>
+                    </li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link" href="">Умные часы</a>
+                    </li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link"
+                            href="">Экшн-камеры</a>
+                    </li>
+                </ul>
             </div>
         </section>
-        <section class="categories-products-menu">
-            <ul class="categories-products-list-menu">
-                <li class="categories-products-item"><a class="categories-products-link" href="">виртуальная
-                        реальность</a></li>
-                <li class="categories-products-item"><a class="categories-products-link" href="">фитнес-браслеты</a>
-                </li>
-                <li class="categories-products-item"><a class="categories-products-link" href="">квадрокоптеры</a>
-                </li>
-                <li class="categories-products-item"><a class="categories-products-link" href="">моноподы для
-                        селфи</a>
-                </li>
-                <li class="categories-products-item"><a class="categories-products-link" href="">умные часы</a>
-                </li>
-                <li class="categories-products-item"><a class="categories-products-link" href="">экшн-камеры</a>
-                </li>
-            </ul>
-        </section>
-
     </header>
     <main class="main-index main-container">
-        <h1 class="visually-hidden" hidden>Интеренет-магазин "Девайс"</h1>
+        <h1 class="visually-hidden">Интеренет-магазин "Девайс"</h1>
         <section class="index-gallery">
             <h2 class="visually-hidden" hidden>Фото девайса</h2>
             <figure class="index-product-item">
@@ -173,42 +180,42 @@
             </ol>
         </section>
         <section class="categories-products-buttons">
-            <h2 class="visually-hidden" hidden>Категории товаров</h2>
+            <h2 class="visually-hidden">Категории товаров</h2>
             <ul class="categories-products-list">
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="">
                         <img src="img\virtual-goggle.svg" width="160" height="160" alt="товары виртуальной реальности">
-                        <h3 class="categories-products-title">Виртуальная реальность</h3>
+                        <h3 class="categories-products-img">Виртуальная реальность</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="">
                         <img src="img\monopod.svg" width="160" height="160" alt="моноподы для селфи">
-                        <h3 class="categories-products-title">Моноподы для селфи</h3>
+                        <h3 class="categories-products-img">Моноподы для селфи</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="">
                         <img src="img\action-camera.svg" width="160" height="160" alt="Экшн-камера">
-                        <h3 class="categories-products-title">Экшн-камеры</h3>
+                        <h3 class="categories-products-img">Экшн-камеры</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="">
                         <img src="img\fitness.svg" width="160" height="160" alt="фитнес-браслет">
-                        <h3 class="categories-products-title">фитнес-браслеты</h3>
+                        <h3 class="categories-products-img">фитнес-браслеты</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="">
                         <img src="img\smart-watch.svg" width="160" height="160" alt="Умные часы">
-                        <h3 class="categories-products-title">Умные часы</h3>
+                        <h3 class="categories-products-img">Умные часы</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="">
                         <img src="img\quadcopter.svg" width="160" height="160" alt="Квадрокоптер">
-                        <h3 class="categories-products-title">Квадрокоптеры</h3>
+                        <h3 class="categories-products-img">Квадрокоптеры</h3>
                     </a>
                 </li>
             </ul>
