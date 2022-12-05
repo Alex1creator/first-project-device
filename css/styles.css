@@ -94,6 +94,21 @@ a {
     margin-right: 57px;
 }
 
+.header-link:hover {
+    opacity: 0.5;
+    outline: none;
+}
+
+.header-link:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.header-link:active {
+    opacity: 0.2;
+    outline: none;
+}
+
 .header-item-entrance {
     width: 120px;
     margin: 0;
@@ -929,6 +944,20 @@ padding-top: 63px;
     border-bottom: 3px solid #CECECE;
     padding-left: 18px;
     background: #F0F0F0;
+}
+
+.mailing-form input:first-of-type:hover {
+    background: #DCDCDC;
+    border: none;
+    border-bottom: 3px solid #CECECE;
+    color: #444444;
+}
+
+.mailing-form input:first-of-type:focus {
+    background: #DCDCDC;
+    border: none;
+    border-bottom: 3px solid #CECECE;
+    color: #444444;
 }
 
 .mailing-form input:last-of-type {
