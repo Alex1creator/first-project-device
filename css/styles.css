@@ -112,7 +112,6 @@ a {
 .header-item-entrance {
     width: 120px;
     margin: 0;
-    padding-right: 10px;
 }
 
 .header-link {
@@ -131,7 +130,19 @@ a {
     text-decoration: none;
     background-color: #FFE17F;
     letter-spacing: 0.2em;
-    padding-right: 20px;
+}
+
+.categories-products-link:hover {
+    opacity: 0.6;
+}
+
+.categories-products-link:active {
+    opacity: 0.3;
+}
+
+.categories-products-link:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
 }
 
 .service-link {
@@ -145,6 +156,7 @@ a {
     width: 1040px;
     margin: 0 auto;
     justify-content: space-between;
+    margin-bottom: 27px;
 }
 
 .header-search {
@@ -271,14 +283,24 @@ a {
     flex-wrap: wrap;
     position: relative;
 }
- 
+
+.header-catalog-button {
+    border: none;
+    padding: 0;
+    background: none;
+    margin-left: 60px;
+    display: flex;
+}
+
 .catalog-products-buttons {
     display: flex;
-    width: 400px;
-    margin-right: auto;
-    margin-bottom: 0;
+    width: 297px;
+    margin: 0;
     align-items: center;
-    margin-top: 27px;
+}
+
+.service {
+    margin-left: auto;
 }
 
 .service-list {
@@ -286,11 +308,23 @@ a {
     width: 471px;
     margin-right: 60px;
     margin-bottom: 0;
-    margin-top: 45px;
 }
 
 .service-item {
     margin-right: 43px;
+}
+
+.service-link:hover {
+    opacity: 0.6;
+}
+
+.service-link:active {
+    opacity: 0.2;
+}
+
+.service-link:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
 }
 
 .service-list li:nth-child(2) {
@@ -308,19 +342,31 @@ display: none;
 
 .catalog-products-buttons:hover {
     cursor: pointer;
+    stroke: black;
 }
 
-.catalog-products-buttons:active + .service + .categories-products-list-menu {
+.header-catalog-button:focus .catalog-products-buttons {
+    border: none;
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.header-catalog-button:focus-visible {
+    border: none;
+    outline: none;
+}
+
+
+.header-catalog-button:active + .service + .categories-products-list-menu {
     display: grid;
     width: 1103px;
     grid-template-columns: 252px 211px 211px;
     grid-template-areas: "cat-1 cat-2 cat-3" "cat-4 cat-5 cat-6" "cat-7 cat-8 cat-9";
     margin: 0;
-    margin-top: 6px;
     padding-left: 57px;
     padding-bottom: 40px;
     position: absolute;
-    top: 86px;
+    top: 65px;
     background: #FFE17F;
     z-index: 1;
     }
@@ -348,11 +394,6 @@ display: none;
 
 .categories-products-buttons {
     margin-bottom: 82px;
-}
-
-
-.categories-products-list-button {
-margin-left: 60px;
 }
 
 .categories-products-symbol {
