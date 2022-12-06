@@ -602,6 +602,27 @@ margin: 0;
     display: block;
 }
 
+.categories-products-link-pictures img {
+    background: #FFE17F;
+}
+
+
+.categories-products-link-pictures:hover img {
+    background: #FFC700;
+}
+
+
+.categories-products-link-pictures:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.categories-products-link-pictures:active {
+    opacity: 0.3;
+    outline: none;
+}
+
+
 .categories-products-img {
     font-family: "Raleway ExtraBold";
     font-size: 18px;
@@ -686,11 +707,21 @@ margin: 0;
     width: 160px;
 }
 
+.buttons-container button:nth-of-type(2):focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
 .buttons-container button:nth-of-type(3):hover {
     color: black;
     margin-top: 35px;
     background: #FFE17F;
     width: 160px;
+}
+
+.buttons-container button:nth-of-type(3):focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
 }
 
 .service-buttons article:nth-of-type(2) {
@@ -743,7 +774,25 @@ margin: 0;
     color: black;
     text-decoration: none;
 }
-/* hovers, focuses */
+
+.delivery-description-icon {
+    background: #FFE17F;
+}
+
+.delivery-description-icon:hover {
+    background: #FFC700;
+}
+
+.delivery-description-title:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.delivery-description-icon:active {
+    opacity: 0.3;
+}
+
+/* hovers, focuses     */
 
 .service-buttons-item:focus {
     color: #FFE17F;
