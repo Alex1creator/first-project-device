@@ -779,8 +779,26 @@ margin: 0;
     background: #FFE17F;
 }
 
-.delivery-description-icon:hover {
+.delivery-description-icon-2 {
+    vertical-align: middle;
+    padding-right: 42px;
+    padding-top: 30px;
+    background-color: #F0F0F0;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+
+.delivery-description-title:hover .delivery-description-icon-2 g {
+    opacity: 1;
+}
+
+
+.delivery-description-title:hover .delivery-description-icon {
     background: #FFC700;
+}
+
+.delivery-description-title:hover {
+    
 }
 
 .delivery-description-title:focus {
@@ -788,7 +806,7 @@ margin: 0;
     outline-offset: 2px;
 }
 
-.delivery-description-icon:active {
+.delivery-description-title:active {
     opacity: 0.3;
 }
 
@@ -834,7 +852,7 @@ margin: 0;
 }
 
 .button-mailing-link {
-    width: 235px;
+    width: 259px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     background: linear-gradient(white, white 16px, #FFE17F 16px, #FFE17F 24px, white 24px, white);
@@ -842,7 +860,8 @@ margin: 0;
     margin-left: 14px;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 23px;
+    padding-left: 35px;
+    padding-right: 32px;
 }
 
 .button-mailing-link a {
@@ -853,6 +872,14 @@ margin: 0;
     background: #FFE17F
 }
 
+.button-mailing-link:active {
+    opacity: 0.3;
+}
+
+.button-mailing-link:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
 
 .about-title {
     font-size: 50px;
@@ -924,6 +951,15 @@ margin: 0;
     background: #FFE17F
 }
 
+.about-link:active {
+    background: #FFCC33;
+}
+
+.about-link a:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
 .contacts-title {
     font-size: 50px;
     line-height: 50px;
@@ -969,6 +1005,11 @@ margin: 0;
     font-weight: 400;
 }
 
+.contacts-address-phone:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
 .mailling-container {
     display: flex;
     width: 1160px;
@@ -1010,7 +1051,7 @@ margin: 0;
     font-style: normal;
     font-weight: 400;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 39px;
     padding-left: 14px;
 }
 
