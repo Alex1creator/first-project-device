@@ -1307,14 +1307,56 @@ padding-top: 63px;
 }
 
 .footer-social-link {
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 20px;
+
+}
+
+.footer-social-link:hover  circle {
+    fill: #FFC700;
+    fill-opacity: 1;
+}
+
+.footer-social-link:focus svg {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.footer-social-link:focus-visible {
+    outline: none;
+}
+
+.footer-social-link:active {
+    fill: #FFC700;
+    fill-opacity: 1;
+    outline: none;
+}
+
+.footer-social-link:active path {
+    fill-opacity: 0.3;
 }
 
 .footer-social-item {
     margin-left: 7.5px;
     margin-right: 7.5px;
 }
+
+.footer-made-link:hover path {
+    fill: white;
+}
+
+.footer-made-link:focus svg {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.footer-made-link:focus-visible {
+    outline: none;
+}
+
+.footer-made-link:active svg {
+    opacity: 0.3;
+    outline: none;
+}
+
 
 /* Стилизация каталога */
 
