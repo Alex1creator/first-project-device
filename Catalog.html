@@ -8,89 +8,101 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <div class="page-header-container">
-            <img class="logo-header" src="img\logo-header.svg" width="145" height="36"
-                alt="Логотип Интеренет-магазин Девайс">
-            <div class="header-container-menu">
-                <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="post">
-                    <input type="text" name="search-form" value="текст поиска" size="50">
-                    <input type="submit" name="search-form" value="Найти">
-                </form>
-                <nav>
-                    <ul class="header-list">
-                        <li class="header-link-entrance"><a class="header-link" href="#"><img width="13" height="12"
-                                    class="header-item-icon" src="img\entrance.svg" alt="Иконка входа">
-                                <span class="header-item">Войти</span></a>
-                        </li>
-                        <li class="header-item"><a class="header-link" href=""><img width="10" height="12"
-                                    class="header-item-icon" src="img\comparison.svg" alt="Иконка Сравнить">
-                                Сравнить</a>
-                        </li>
-                        <li class="header-item"><a class="header-link" href=""><img width="31" height="21"
-                                    class="header-item-icon" src="img\basket-2-products.svg" alt="Иконка Корзина">
-                                <span class="header-item">
-                                    Корзина</span></a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-            <section class="categories-products">
-                <div class="categories-products-container">
-                    <h1 class="categories-products-title visually-hidden" hidden>каталог товаров</h1>
-                    <ul class="catalog-products-buttons">
-                        <li class="categories-products-list-button"><a class="categories-products-link"
-                                href="Catalog.html">КАТАЛОГ ТОВАРОВ</a></li>
-                        <li class="categories-products-symbol"><a class="open-categories-products-list" href=""><img
-                                    class="categories-products-img" src="img\plus-catalog.svg" width="50" height="50"
-                                    alt="Иконка открытия каталога"></a></li>
-                    </ul>
-                    <section class="service">
-                        <h2 class="visually-hidden" hidden>Услуги</h2>
-                        <ul class="service-list">
-                            <li class="service-item"><a class="service-link" href="#">ДОСТАВКА</a></li>
-                            <li class="service-item"><a class="service-link" href="#">ГАРАНТИЯ</a></li>
-                            <li class="service-item"><a class="service-link" href="#">КОНТАКТЫ</a></li>
-                        </ul>
-                    </section>
-                </div>
-            </section>
-            <section class="categories-products-menu">
-                <ul class="categories-products-list-menu">
-                    <li class="categories-products-item"><a class="categories-products-link" href="">виртуальная
-                            реальность</a></li>
-                    <li class="categories-products-item"><a class="categories-products-link" href="">фитнес-браслеты</a>
+    <header class="catalog-page-header">
+        <img class="logo-header" src="img\logo-header.svg" width="145" height="36"
+            alt="Логотип Интеренет-магазин Девайс">
+        <div class="header-container-menu">
+            <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="post">
+                <input class="header-search-window" type="text" name="search-form" value="Поиск по сайту" size="50">
+                <input class="header-search-btn" type="submit" name="search-form" value="Найти">
+            </form>
+            <nav>
+                <ul class="header-list">
+                    <li class="header-link-entrance"><a class="header-link" href="#"><img width="13" height="12"
+                                class="header-item-icon" src="img\entrance.svg" alt="Иконка входа">
+                            <span class="header-item-entrance">Коля Петухов</span></a>
                     </li>
-                    <li class="categories-products-item"><a class="categories-products-link" href="">квадрокоптеры</a>
+                    <li class="header-link-exit"><a class="header-link" href="#">Выйти</a></li>
+                    <li class="header-item"><a class="header-link" href=""><img width="10" height="12"
+                                class="header-item-icon" src="img\comparison.svg" alt="Иконка Сравнить">
+                            Сравнить</a>
                     </li>
-                    <li class="categories-products-item"><a class="categories-products-link" href="">моноподы для
-                            селфи</a>
-                    </li>
-                    <li class="categories-products-item"><a class="categories-products-link" href="">умные часы</a>
-                    </li>
-                    <li class="categories-products-item"><a class="categories-products-link" href="">экшн-камеры</a>
+                    <li class="header-item-basket"><a class="header-link" href=""><img width="31" height="21"
+                                class="header-item-icon" src="img\basket-2-products.svg" alt="Иконка Корзина">
+                            <span class="header-item">
+                                Корзина</span></a>
                     </li>
                 </ul>
-            </section>
+            </nav>
         </div>
+        <section class="categories-products">
+            <div class="categories-products-container">
+                <button class="header-catalog-button" type="button">
+                    <ul class="catalog-products-buttons">
+                        <li class="categories-products-list-button">
+                            <h2 class="categories-products-title">КАТАЛОГ ТОВАРОВ</h2>
+                        </li>
+                        <li class="categories-products-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="50"
+                                height="51" fill="none">
+                                <circle cx="25" cy="25.4" r="24" stroke="#000" stroke-width="2" opacity=".3" />
+                                <g clip-path="url(#a)" opacity=".3">
+                                    <path fill="#000" d="M33 24.4h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" />
+                                </g>
+                                <defs>
+                                    <clipPath id="a">
+                                        <path fill="#fff" d="M17 17.4h16v16H17z" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </li>
+                    </ul>
+                </button>
+                <section class="service">
+                    <h2 class="visually-hidden" hidden>Услуги</h2>
+                    <ul class="service-list">
+                        <li class="service-item"><a class="service-link" href="#">ДОСТАВКА</a></li>
+                        <li class="service-item"><a class="service-link" href="#">ГАРАНТИЯ</a></li>
+                        <li class="service-item"><a class="service-link" href="#">КОНТАКТЫ</a></li>
+                    </ul>
+                </section>
+                <ul class="categories-products-list-menu">
+                    <li class="categories-products-item-menu"><a class="categories-products-link" href="">Виртуальная
+                            реальность</a></li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link"
+                            href="">Фитнес-браслеты</a>
+                    </li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link"
+                            href="">Квадрокоптеры</a>
+                    </li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link" href="">Моноподы для
+                            селфи</a>
+                    </li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link" href="">Умные часы</a>
+                    </li>
+                    <li class="categories-products-item-menu"><a class="categories-products-link"
+                            href="">Экшн-камеры</a>
+                    </li>
+                </ul>
+            </div>
+        </section>
     </header>
     <main class="main-inner">
         <div class="catalog-main-container">
             <header class="inner-header">
                 <h2 class="catalog-title">Моноподы для селфи</h2>
                 <ul class="breadcrumbs-list">
-                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">главная</a></li>
-                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="Catalog.html">каталог товаров</a>
+                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+                    <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="Catalog.html">Каталог товаров</a>
                     </li>
-                    <li class="breadcrumbs-item"><a class="navigation-link-current" href="#">моноподы для селфи</a></li>
+                    <li class="breadcrumbs-item"><a class="navigation-link-current" href="#">Моноподы для селфи</a></li>
                 </ul>
             </header>
             <section class="catalog-filter">
                 <div class="catalog-filter-container">
                     <div class="filter-header-container">
-                        <h2 class="filter-header">Фильтр</h2>
+                        <h2 class="filter-header">фильтр</h2>
                         <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
-                            <label class="sorting-title">Сортировка
+                            <label class="sorting-title">сортировка
                                 <select class="select-control" name="sorting-select">
                                     <option value="popular">Популярные</option>
                                     <option value="rear">Уникальные</option>
