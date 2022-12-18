@@ -1386,7 +1386,12 @@ padding-top: 63px;
 .catalog-main-container {
     width: 1440px;
     margin: 0 auto;
-    background: linear-gradient(white, white 118px, #F0F0F0 118px, #F0F0F0);
+    margin-bottom: 36px;
+}
+
+.catalog-filter {
+    background: #F0F0F0;
+    margin: 0 auto;
 }
 
 .catalog-filter-container {
@@ -1394,7 +1399,7 @@ padding-top: 63px;
     flex-wrap: wrap;
     width: 1160px;
     margin: 0 auto;
-    padding-top: 8px;
+    padding-top: 19px;
 }
 
 .inner-header {
@@ -1426,33 +1431,134 @@ padding-top: 63px;
 
 .filter-header-container {
     display: flex;
-    margin-bottom: 35px;
+    margin-bottom: 21px;
+    width: 1160px;
+}
+
+.filter-header-container a {
+    display: block;
+    height: 30px;
+}
+
+.filter-input-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1160px;
 }
 
 .filter-input {
     width: 320px;
+    margin: 0;
+}
+
+.filter-input::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background: black;
+    display: block;
+    margin-left: 59px;
+    margin-top: 32px;
+    margin-bottom: 12px;
 }
 
 .sorting-title {
-    margin-left: 20px;
+    margin-left: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 16px;
+    line-height: 19px;
 }
 
 .sorting-type {
     align-self: center;
-    width: 840px;
+    width: 550px;
+    margin-right: 187px;
+}
+
+.set-up-to-down {
+    transform: rotate(180deg);
 }
 
 .filter-header {
     font-size: 16px;
     line-height: 19px;
-    width: 320px;
+    width: 261px;
     margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    align-self: center;
+    padding-left: 60px;
+}
+
+.catalog-filter-title {
+    font-family: "Rubik-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 28px;
+    margin-left: 21px;
 }
 
 .catalog-filter-price {
-    margin-top: 58px;
     margin-left: 41px;
+    border: none;
+    padding: 0;
 }
+
+.range-scale {
+    position: relative;
+    width: 200px;
+    height: 2px;
+    background-color: #DCDCDC;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+
+.range-bar {
+    position: absolute;
+    height: 2px;
+    background-color: black;
+}
+
+.range-toggle {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: white;
+    cursor: pointer;
+}
+
+.toggle-min {
+top: -8px;
+left: -9px;
+}
+
+.toggle-max {
+top: -8px;
+left: 109px;
+}
+
+
+.range-toggle:hover {
+    border: 2px solid #929292;
+}
+
+.range-toggle:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.range-toggle:active {
+    outline: none;
+    background: black;
+    border: 2px solid black;
+}
+
+
 
 .catalog-filter-color {
     margin-top: 0;
@@ -1472,7 +1578,7 @@ padding-top: 63px;
     line-height: 20px;
 }
 
-.catalog-filter-title, .filter-input-bluetooth {
+.filter-input-bluetooth {
     font-family: "Rubik-bold";
     font-style: normal;
     font-weight: 700;
@@ -1570,7 +1676,14 @@ padding-top: 63px;
 .select-control {
     font-family: "Rubik-regular";
     font-size: 18px;
-    line-height: 30px;
+    line-height: 20px;
     font-style: normal;
     font-weight: 400;
+    border: none;
+    background: transparent;
+    margin-left: 183px;
+}
+
+.select-control span {
+    padding-right: 5px;
 }
