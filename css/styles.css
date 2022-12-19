@@ -1499,13 +1499,20 @@ padding-top: 63px;
     line-height: 20px;
     margin-bottom: 28px;
     margin-left: 21px;
+    padding: 0;
 }
 
 .catalog-filter-price {
     margin-left: 41px;
     border: none;
     padding: 0;
+    margin-bottom: 12px;
 }
+
+.range {
+    margin-bottom: 36px;
+}
+
 
 .range-scale {
     position: relative;
@@ -1514,6 +1521,7 @@ padding-top: 63px;
     background-color: #DCDCDC;
     border-radius: 50%;
     margin-left: 20px;
+    margin-bottom: 12px;
 }
 
 .range-bar {
@@ -1538,10 +1546,9 @@ left: -9px;
 }
 
 .toggle-max {
-top: -8px;
-left: 109px;
+    top: -8px;
+    left: 109px;
 }
-
 
 .range-toggle:hover {
     border: 2px solid #929292;
@@ -1558,11 +1565,62 @@ left: 109px;
     border: 2px solid black;
 }
 
+.range-wrapper-input {
+    display: flex;
+    width: 250px;
+    margin-left: 7px;
+}
 
+.catalog-input-price {
+    display: flex;
+    width: 100px;
+    font-family: "Rubik-regular";
+    font-size: 15px;
+    line-height: 18px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.catalog-filter-input {
+    font: inherit;
+    width: 70px;
+    border: none;
+    background: transparent;
+    padding: 0;
+    margin-left: 4px;
+}
 
 .catalog-filter-color {
     margin-top: 0;
-    margin-left: 41px;
+    margin-left: 59px;
+    border: none;
+    padding: 0; 
+}
+
+.catalog-filter-price::after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin-left: 20px;
+}
+
+.input-item {
+    position: relative;
+    display: block;
+    padding-left: 2px;
+}
+
+.control-mark {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border: 2px solid black;
+}
+
+.control-label {
+    padding-left: 36px;
 }
 
 .catalog-filter-bluetooth {
@@ -1576,6 +1634,7 @@ left: 109px;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+    padding: 0;
 }
 
 .filter-input-bluetooth {
@@ -1590,14 +1649,6 @@ left: 109px;
     font-family: "Rubik-regular";
     font-size: 16px;
     line-height: 19px;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.catalog-input-price {
-    font-family: "Rubik-regular";
-    font-size: 15px;
-    line-height: 18px;
     font-style: normal;
     font-weight: 400;
 }
@@ -1682,6 +1733,7 @@ left: 109px;
     border: none;
     background: transparent;
     margin-left: 183px;
+    width: 158px;
 }
 
 .select-control span {
