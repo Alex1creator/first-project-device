@@ -1595,6 +1595,16 @@ left: -9px;
     margin-left: 59px;
     border: none;
     padding: 0; 
+    margin-bottom: 12px;
+}
+
+.catalog-filter-color::after {
+    content: "";
+    width: 200px;
+    height: 2px;
+    background-color: black;
+    display: block;
+    margin-left: 2px;
 }
 
 .catalog-filter-price::after {
@@ -1604,6 +1614,14 @@ left: -9px;
     background-color: black;
     display: block;
     margin-left: 20px;
+}
+
+.filter-color-item:not(:last-of-type) {
+    margin-bottom: 18px;
+}
+
+.filter-color-item:last-of-type {
+    margin-bottom: 18px;
 }
 
 .input-item {
@@ -1616,7 +1634,25 @@ left: -9px;
     position: absolute;
     width: 16px;
     height: 16px;
+    border: 2px solid #CCCCCC;
+    border-radius: 3px;
+}
+
+.input-item:hover {
+    opacity: 0.3;
+}
+
+.control-input:focus + .control-mark {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.control-input:checked + .control-mark {
+    background-image: url("../img/check-mark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
     border: 2px solid black;
+    border-radius: 3px;
 }
 
 .control-label {
@@ -1624,8 +1660,16 @@ left: -9px;
 }
 
 .catalog-filter-bluetooth {
-    margin-top: 86px;
-    margin-left: 41px;
+    margin-top: 0;
+    margin-left: 59px;
+    border: none;
+    padding: 0;
+    margin-bottom: 12px;
+}
+
+.filter-bluetooth-list {
+    margin: 0;
+    padding: 0;
 }
 
 .filter-input-color  {
@@ -1635,6 +1679,8 @@ left: -9px;
     font-size: 18px;
     line-height: 20px;
     padding: 0;
+    padding-left: 2px;
+    margin-bottom: 20px;
 }
 
 .filter-input-bluetooth {
@@ -1643,14 +1689,53 @@ left: -9px;
     font-weight: 700;
     font-size: 18px;
     line-height: 20px;
+    margin-bottom: 20px;
 }
 
-.filter-colors-list, .filter-bluetooth-item {
+.filter-colors-list {
     font-family: "Rubik-regular";
     font-size: 16px;
     line-height: 19px;
     font-style: normal;
     font-weight: 400;
+    margin: 0;
+    margin-bottom: 34px;
+}
+
+.filter-bluetooth-item {
+    font-family: "Rubik-regular";
+    font-size: 16px;
+    line-height: 19px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.filter-bluetooth-item:not(:last-of-type) {
+    margin-bottom: 20px;
+}
+
+.bluetooth-mark {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #CCCCCC;
+}
+
+.bluetooth-label {
+    padding-left: 36px;
+}
+
+.bluetooth-input:checked + .bluetooth-mark {
+    border: 2px solid black;
+    background: black;
+    box-shadow: inset 0 0 0 4px white;
+}
+
+
+.catalog-btn-search {
+    width: ;
+    
 }
 
 .catalog-filter-button {
