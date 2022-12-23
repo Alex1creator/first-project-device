@@ -1923,28 +1923,55 @@ left: -9px;
     text-align: right;
 }
 
+
+.catalog-more {
+    margin: 0 auto;
+    display: block;
+    width: 754px;
+    padding: 15px 0;
+    border: 3px solid #E5E5E5;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 44px;
+}
+
 .pagination-container {
     display: flex;
     flex-direction: column;
     width: 840px;
     background-color: white;
     margin-left: auto;
-    padding-top: 52px;
+    padding-top: 40px;
 }
 
 .pagination {
     display: flex;
     width: 760px;
-    justify-content: center;
     margin: 0 auto;
-    margin-top: 70px;
     margin-bottom: 80px;
-    padding-bottom: 44px;
+    background: #EBEBEB;
 }
 
-.catalog-more {
-    margin: 0 auto;
+.pagination-item:last-of-type, .pagination-item:first-of-type {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 25px 0;
 }
+
+/* .pagination-item:not(:last-of-type), .pagination-item:not(:first-of-type) {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    align-self: center;
+    font-family: "Rubik-regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px;
+    opacity: 0.3;
+    color: #444444;
+} */
+
 
 .select-control {
     font-family: "Rubik-regular";
