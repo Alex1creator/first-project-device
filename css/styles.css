@@ -1948,20 +1948,17 @@ left: -9px;
 .pagination {
     display: flex;
     width: 760px;
+    justify-content: space-between;
     margin: 0 auto;
-    margin-bottom: 80px;
+    margin-bottom: 77px;
     background: #EBEBEB;
 }
 
-.pagination-item:last-of-type, .pagination-item:first-of-type {
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-    padding: 25px 0;
-}
-
-/* .pagination-item:not(:last-of-type), .pagination-item:not(:first-of-type) {
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
+.pagination-item:nth-of-type(2), 
+.pagination-item:nth-of-type(3), 
+.pagination-item:nth-of-type(4), 
+.pagination-item:nth-of-type(5), 
+.pagination-item:nth-of-type(6) {
     align-self: center;
     font-family: "Rubik-regular";
     font-style: normal;
@@ -1970,8 +1967,13 @@ left: -9px;
     font-size: 16px;
     opacity: 0.3;
     color: #444444;
-} */
+}
 
+.pagination-item:last-of-type, .pagination-item:first-of-type {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 25px 0;
+}
 
 .select-control {
     font-family: "Rubik-regular";
