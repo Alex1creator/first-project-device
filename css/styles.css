@@ -1956,8 +1956,30 @@ left: -9px;
 
 .pagination-item:nth-of-type(2), 
 .pagination-item:nth-of-type(3), 
-.pagination-item:nth-of-type(4), 
-.pagination-item:nth-of-type(5), 
+.pagination-item:nth-of-type(4)  {
+    align-self: center;
+    font-family: "Rubik-regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px;
+    opacity: 0.3;
+    color: #444444;
+    margin-right: 31px;
+}
+
+.pagination-item:nth-of-type(5) {
+    align-self: center;
+    font-family: "Rubik-regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 16px;
+    opacity: 0.3;
+    color: #444444;
+    margin-right: 25px;
+}
+
 .pagination-item:nth-of-type(6) {
     align-self: center;
     font-family: "Rubik-regular";
@@ -1967,12 +1989,35 @@ left: -9px;
     font-size: 16px;
     opacity: 0.3;
     color: #444444;
+    margin-right: 0;
 }
 
-.pagination-item:last-of-type, .pagination-item:first-of-type {
+.pagination-item:first-of-type {
     text-transform: uppercase;
     letter-spacing: 0.2em;
-    padding: 25px 0;
+    padding: 25px 25px;
+    margin-right: 160px;
+}
+
+.pagination-item:first-of-type:hover {
+    background: #DCDCDC;
+    cursor: pointer;
+}
+
+.pagination-link:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.pagination-item:first-of-type:active {
+    opacity: 0.3;
+}
+
+.pagination-item:last-of-type {
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    padding: 25px 21px;
+    margin-left: auto;
 }
 
 .select-control {
