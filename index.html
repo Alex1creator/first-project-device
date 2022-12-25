@@ -38,6 +38,7 @@
             </nav>
         </div>
         <section class="categories-products">
+            <h2 class="visually-hidden" hidden>Каталог товаров</h2>
             <div class="categories-products-container">
                 <button class="header-catalog-button" type="button">
                     <span class="categories-products-title">КАТАЛОГ ТОВАРОВ</span>
@@ -112,6 +113,30 @@
                     </table>
                 </figcaption>
             </figure>
+            <ul class="slider-buttons">
+                <li>
+                    <button class="slider-button slider-prev" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="60" fill="none">
+                            <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+                        </svg></button>
+                </li>
+                <li>
+                    <button class="slider-button slider-next" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="60" fill="none">
+                            <path fill="#000" d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
+                        </svg></button>
+                </li>
+            </ul>
+            <ol class="slider-pagination">
+                <li class="slider-pagination-item">
+                    <button class="slider-pagination-button slider-pagination-button-current" type="button"><span
+                            class="slider-pagination-focus"></span><span class="visually-hidden">1 фото</span></button>
+                    <button class="slider-pagination-button" type="button"><span
+                            class="slider-pagination-focus"></span><span class="visually-hidden">2 фото</span></button>
+                    <button class="slider-pagination-button" type="button"><span
+                            class="slider-pagination-focus"></span><span class="visually-hidden">3 фото</span></button>
+                </li>
+            </ol>
             <figure class="index-product-item">
                 <img class="slider-image" src="img/img-catalog/fitness-bracelet.png" width="560" height="560"
                     alt="фото фитнес-браслет">
@@ -158,67 +183,44 @@
 
                 </figcaption>
             </figure>
-            <ul class="slider-buttons">
-                <li>
-                    <button class="slider-button slider-prev" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="60" fill="none">
-                            <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-                        </svg></button>
-                </li>
-                <li>
-                    <button class="slider-button slider-next" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="60" fill="none">
-                            <path fill="#000" d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
-                        </svg></button>
-                </li>
-            </ul>
-            <ol class="slider-pagination">
-                <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button"><span
-                            class="visually-hidden">1 фото</span></button>
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button"><span
-                            class="visually-hidden">2 фото</span></button>
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button"><span
-                            class="visually-hidden">3 фото</span></button>
-                </li>
-            </ol>
+
         </section>
         <section class="categories-products-buttons">
             <h2 class="visually-hidden">Категории товаров</h2>
             <ul class="categories-products-list">
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="#">
-                        <img src="img\virtual-goggle.svg" width="160" height="160" alt="Виртуальная реальность">
+                        <img src="img/virtual-goggle.svg" width="160" height="160" alt="Виртуальная реальность">
                         <h3 class="categories-products-img">Виртуальная реальность</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="#">
-                        <img src="img\monopod.svg" width="160" height="160" alt="моноподы для селфи">
+                        <img src="img/monopod.svg" width="160" height="160" alt="моноподы для селфи">
                         <h3 class="categories-products-img">Моноподы для селфи</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="#">
-                        <img src="img\action-camera.svg" width="160" height="160" alt="Экшн-камера">
+                        <img src="img/action-camera.svg" width="160" height="160" alt="Экшн-камера">
                         <h3 class="categories-products-img">Экшн-камеры</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="#">
-                        <img src="img\fitness.svg" width="160" height="160" alt="фитнес-браслет">
+                        <img src="img/fitness.svg" width="160" height="160" alt="фитнес-браслет">
                         <h3 class="categories-products-img">фитнес-браслеты</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="#">
-                        <img src="img\smart-watch.svg" width="160" height="160" alt="Умные часы">
+                        <img src="img/smart-watch.svg" width="160" height="160" alt="Умные часы">
                         <h3 class="categories-products-img">Умные часы</h3>
                     </a>
                 </li>
                 <li class="categories-products-item">
                     <a class="categories-products-link-pictures" href="#">
-                        <img src="img\quadcopter.svg" width="160" height="160" alt="Квадрокоптер">
+                        <img src="img/quadcopter.svg" width="160" height="160" alt="Квадрокоптер">
                         <h3 class="categories-products-img">Квадрокоптеры</h3>
                     </a>
                 </li>
@@ -238,7 +240,7 @@
                         к вашему подъезду совершенно бесплатно! Ведь <br>
                         мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </article>
-                <img class="service-buttons-icon" src="img\carrier.svg" width="136" height="164" alt="Иконка курьера">
+                <img class="service-buttons-icon" src="img/carrier.svg" width="136" height="164" alt="Иконка курьера">
             </article>
 
             <article class="service-items">
@@ -249,7 +251,7 @@
                         сгорит дом — не переживайте, мы выдадим вам новый.
                         Товар, не дом, конечно же.</p>
                 </article>
-                <img class="service-buttons-icon" src="img\garanty.svg" width="132" height="158" alt="Иконка гарантии">
+                <img class="service-buttons-icon" src="img/garanty.svg" width="132" height="158" alt="Иконка гарантии">
             </article>
 
 
@@ -261,13 +263,13 @@
                         Кредитные консультанты подберут для вас наиболее выгодные условия кредита.
                         Выгодные для банка, разумеется.</p>
                 </article>
-                <img class="service-buttons-icon" src="img\credit.svg" width="156" height="188" alt="Иконка кредита">
+                <img class="service-buttons-icon" src="img/credit.svg" width="156" height="188" alt="Иконка кредита">
             </article>
 
 
             <div class="index-delivery">
                 <a class="delivery-description-title" href="#"><img class="delivery-description-icon"
-                        src="img\lorry.svg" width="125" height="100" alt="иконка доставки">
+                        src="img/lorry.svg" width="125" height="100" alt="иконка доставки">
                     <p class="delivery-description-text">доставим
                         редкий товар под заказ</p>
                     <svg class="delivery-description-icon-2" width="41" height="40" viewBox="0 0 41 40" fill="none"
@@ -330,7 +332,7 @@
                     <input type="email" name="mailling-input" value="Ваш e-mail">
                     <input type="submit" name="mailling-input" value="подписаться">
                 </form>
-                <span class="mailling-free"><img src="img\status-success.svg" width="14" height="14"
+                <span class="mailling-free"><img src="img/status-success.svg" width="14" height="14"
                         alt="Иконка бесплатно"><span class="free">Это бесплатно</span></span>
             </div>
         </section>
@@ -338,7 +340,7 @@
     <footer class="page-footer">
         <div class="logo-footer-container">
             <a class="logo-footer" href="index.html">
-                <img class="logo-footer-img" src="img\logo-footer.svg" width="145" height="36"
+                <img class="logo-footer-img" src="img/logo-footer.svg" width="145" height="36"
                     alt="Логотип Интеренет-магазин Девайс">
             </a>
         </div>

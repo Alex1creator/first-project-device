@@ -426,10 +426,17 @@ height: 560px;
     margin-bottom: 55px;
 }
 
-.slider-button {
+.slider-buttons {
     position: absolute;
-    top: 197px;
-    left: 162px;
+    top: 176px;
+    left: 236px;
+    display: flex;
+    justify-content: space-between;
+    width: 543px;
+}
+
+.slider-button {
+    display: block;
     background: none;
     border: none;
     cursor: pointer;
@@ -444,8 +451,9 @@ height: 560px;
     outline-offset: 2px;
 }
 
-..slider-button:active {
+.slider-button:active {
     opacity: 0.3;
+    outline: none;
 }
 
 
@@ -459,16 +467,53 @@ height: 560px;
 } */
 
 .slider-pagination {
+    position: relative;
+}
+
+.slider-pagination-item {
     position: absolute;
-    top: 333px;
-    right: 125px;
+    top: -230px;
+    right: 197px;
+    padding-left: 10px;
 }
 
 .slider-pagination-button {
+    position: relative;
     padding: 4px;
     border: 2px solid black;
     border-radius: 16px;
     margin-right: 15px;
+    background: white;
+}
+
+.slider-pagination-button-current {
+    background: black;
+}
+
+/* .slider-pagination-button-current:hover {
+    background: black;
+} */
+
+.slider-pagination-focus {
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 12px;
+    top: -2px;
+    right: -2px;
+}
+
+.slider-pagination-button:hover {
+    opacity: 0.6;
+}
+
+.slider-pagination-button:focus .slider-pagination-focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.slider-pagination-button:active {
+    opacity: 0.3;
 }
 
 .index-product-item {
