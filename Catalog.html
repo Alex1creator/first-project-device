@@ -4,13 +4,14 @@
 <head>
     <meta charset="utf-8">
     <title>каталог товаров Интеренет-магазин Девайс</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <h1 class="visually-hidden">Каталог Интеренет-магазина "Девайс"</h1>
     <header class="catalog-page-header">
         <a class="logo-header-link" href="index.html">
-            <img class="logo-header" src="img\logo-header.svg" width="145" height="36"
+            <img class="logo-header" src="img/logo-header.svg" width="145" height="36"
                 alt="Логотип Интеренет-магазин Девайс"></a>
         <div class="header-container-menu">
             <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -20,16 +21,16 @@
             <nav>
                 <ul class="header-list">
                     <li class="header-link-entrance"><a class="header-link" href="#"><img width="13" height="12"
-                                class="header-item-icon" src="img\entrance.svg" alt="Иконка входа">
+                                class="header-item-icon" src="img/entrance.svg" alt="Иконка входа">
                             <span class="header-item-entrance">Коля Петухов</span></a>
                     </li>
                     <li class="header-link-exit"><a class="header-link" href="#">Выйти</a></li>
                     <li class="header-item"><a class="header-link" href=""><img width="10" height="12"
-                                class="header-item-icon" src="img\comparison.svg" alt="Иконка Сравнить">
+                                class="header-item-icon" src="img/comparison.svg" alt="Иконка Сравнить">
                             Сравнить</a>
                     </li>
                     <li class="header-item-basket"><a class="header-link" href=""><img width="31" height="21"
-                                class="header-item-icon" src="img\basket-2-products.svg" alt="Иконка Корзина">
+                                class="header-item-icon" src="img/basket-2-products.svg" alt="Иконка Корзина">
                             <span class="header-item">
                                 Корзина</span></a>
                     </li>
@@ -38,25 +39,22 @@
         </div>
         <section class="categories-products">
             <div class="categories-products-container">
+                <h2 class="categories-products-title visually-hidden">список категорий товаров</h2>
                 <button class="header-catalog-button" type="button">
-                    <ul class="catalog-products-buttons">
-                        <li class="categories-products-list-button">
-                            <h2 class="categories-products-title">КАТАЛОГ ТОВАРОВ</h2>
-                        </li>
-                        <li class="categories-products-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="50"
-                                height="51" fill="none">
-                                <circle cx="25" cy="25.4" r="24" stroke="#000" stroke-width="2" opacity=".3" />
-                                <g clip-path="url(#a)" opacity=".3">
-                                    <path fill="#000" d="M33 24.4h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" />
-                                </g>
-                                <defs>
-                                    <clipPath id="a">
-                                        <path fill="#fff" d="M17 17.4h16v16H17z" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </li>
-                    </ul>
+                    <span class="categories-products-title">КАТАЛОГ ТОВАРОВ</span>
+                    <span class="categories-products-symbol">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" fill="none">
+                            <circle cx="25" cy="25.4" r="24" stroke="#000" stroke-width="2" opacity=".3" />
+                            <g clip-path="url(#a)" opacity=".3">
+                                <path fill="#000" d="M33 24.4h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M17 17.4h16v16H17z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
                 </button>
                 <section class="service">
                     <h2 class="visually-hidden" hidden>Услуги</h2>
@@ -127,11 +125,11 @@
                             возрастанию</span></a>
                     <a class="set-up-to-down" href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
-                            <g opacity="0.2" clip-path="url(#clip0_34944_314)">
+                            <g opacity="0.2" clip-path="url(#clip0_34944_314_1)">
                                 <path d="M15 10L20.5 20H9.5" fill="black" />
                             </g>
                             <defs>
-                                <clipPath id="clip0_34944_314">
+                                <clipPath id="clip0_34944_314_1">
                                     <rect width="11" height="10" fill="white" transform="translate(9.5 10)" />
                                 </clipPath>
                             </defs>
@@ -203,13 +201,12 @@
                             <ul class="filter-bluetooth-list">
                                 <li class="filter-bluetooth-item"><label class="input-item"><input
                                             class="visually-hidden bluetooth-input" type="radio" name="bluetooth"
-                                            checked value="bluetooth-yes"><span
-                                            class="bluetooth-mark"></span></span><span
+                                            checked value="bluetooth-yes"><span class="bluetooth-mark"></span><span
                                             class="bluetooth-label">Есть</span></label>
                                 </li>
                                 <li class="filter-bluetooth-item"><label class="input-item"><input
                                             class="visually-hidden bluetooth-input" type="radio" name="bluetooth"
-                                            value="bluetooth-no"><span class="bluetooth-mark"></span></span><span
+                                            value="bluetooth-no"><span class="bluetooth-mark"></span><span
                                             class="bluetooth-label">Нет</span></label></li>
                             </ul>
                         </fieldset>
@@ -221,9 +218,9 @@
                     <ul class="product-list">
                         <li class="product-card">
                             <a class="product-card-link" href="#"><span class="more-detail">подробнее</span><img
-                                    class="product-card-image" src="img\img-catalog\selfy-stick-lite.jpg" width="360"
+                                    class="product-card-image" src="img/img-catalog/selfy-stick-lite.jpg" width="360"
                                     height="380" alt="Любительская селфи-палка">
-                                <div class="product-card-container" href="#">
+                                <div class="product-card-container">
                                     <h3 class="product-card-title">Любительская селфи-палка</h3>
                                     <b class="product-card-price">500 р</b>
                                 </div>
@@ -231,9 +228,9 @@
                         </li>
                         <li class="product-card">
                             <a class="product-card-link" href="#"><span class="more-detail">подробнее</span><img
-                                    class="product-card-image" src="img\img-catalog\selfy-stick-professional.jpg"
+                                    class="product-card-image" src="img/img-catalog/selfy-stick-professional.jpg"
                                     width="360" height="380" alt="Профессиональная селфи-палка">
-                                <div class="product-card-container" href="#">
+                                <div class="product-card-container">
                                     <h3 class="product-card-title">Профессиональная селфи-палка</h3>
                                     <b class="product-card-price">1500 р</b>
                                 </div>
@@ -242,9 +239,9 @@
                         </li>
                         <li class="product-card">
                             <a class="product-card-link" href="#"><span class="more-detail">подробнее</span><img
-                                    class="product-card-image" src="img\img-catalog\selfy-stick-waterproofe.png"
+                                    class="product-card-image" src="img/img-catalog/selfy-stick-waterproofe.png"
                                     width="360" height="380" alt="Непотопляемая селфи-палка">
-                                <div class="product-card-container" href="#">
+                                <div class="product-card-container">
                                     <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
                                     <b class="product-card-price">2500 р</b>
                                 </div>
@@ -252,9 +249,9 @@
                         </li>
                         <li class="product-card">
                             <a class="product-card-link" href="#"><span class="more-detail">подробнее</span><img
-                                    class="product-card-image" src="img\img-catalog\selfy-stick-follow-me.jpg"
+                                    class="product-card-image" src="img/img-catalog/selfy-stick-follow-me.jpg"
                                     width="360" height="380" alt="Селфи-палка следуй-за-мной">
-                                <div class="product-card-container" href="#">
+                                <div class="product-card-container">
                                     <h3 class="product-card-title">Селфи-палка "следуй-за-мной"</h3>
                                     <b class="product-card-price">1500 р</b>
                                 </div>
@@ -284,7 +281,7 @@
     <footer class="page-footer">
         <div class="logo-footer-container">
             <a class="logo-footer" href="index.html">
-                <img class="logo-footer-img" src="img\logo-footer.svg" width="145" height="36"
+                <img class="logo-footer-img" src="img/logo-footer.svg" width="145" height="36"
                     alt="Логотип Интеренет-магазин Девайс">
             </a>
         </div>
@@ -327,13 +324,6 @@
                                     d="M22.7 13.2c1.5-.5 2.6.3 3.2 1l1.7-.5a2 2 0 0 1-.8 1.6c.7.2 1.2-.4 1.2-.4-.1.9-.9 1.7-1.4 1.9-.2 6.3-2.8 10.4-8.9 10.3h-.4c-.3 0-3.7-.4-4.3-1.8 2 .2 3.4-.4 4.1-1.1-.8-.3-2.4-.4-2.6-2.8.3.2.5.3 1.1.2-1.1-.8-2.3-1.5-2.2-3.5.3.3.9.5 1.2.4-.6-.2-1.8-3.1-.8-4.6 1.6 1.7 3.3 3.4 6.3 3.5.2-2.1 1-3.5 2.6-4.2Z" />
                             </svg><span class="visually-hidden"></span></a></li>
                 </ul>
-                <!-- <img
-                                class="footer-social-link" src="img\logo-facebook.svg" width="40" height="40"
-                                alt="фейсбук">
-                            
-                            <img class="logo-academy"
-                        src="img\logo-htmlacademy.svg" width="115" height="33" alt="Логотип htmlacademy"> -->
-
                 <a class="footer-made-link" href="https://htmlacademy.ru/"><svg xmlns="http://www.w3.org/2000/svg"
                         width="115" height="33" fill="none">
                         <path fill="#FFC700"

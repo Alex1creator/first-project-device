@@ -346,6 +346,15 @@ display: none;
     stroke: black;
 }
 
+.header-catalog-button:hover {
+    cursor: pointer;
+}
+
+.header-catalog-button:hover svg circle, 
+.header-catalog-button:hover svg g {
+    opacity: 1;
+}
+
 .header-catalog-button:focus .catalog-products-buttons {
     border: none;
     outline: 2px solid #AF4FFF;
@@ -417,7 +426,7 @@ height: 560px;
     margin-bottom: 55px;
 }
 
-.slider-button-slider-prev {
+.slider-button {
     position: absolute;
     top: 197px;
     left: 162px;
@@ -426,14 +435,28 @@ height: 560px;
     cursor: pointer;
 }
 
-.slider-button-slider-next {
+.slider-button:hover {
+    opacity: 0.6;
+}
+
+.slider-button:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+..slider-button:active {
+    opacity: 0.3;
+}
+
+
+/* .slider-button-slider-next {
     position: absolute;
     top: 197px;
     left: 673px;
     background: none;
     border: none;
     cursor: pointer;
-}
+} */
 
 .slider-pagination {
     position: absolute;
@@ -454,7 +477,7 @@ height: 560px;
     display: flex;
     justify-content: space-between;
     width: 1160px;
-    height: 560;
+    height: 560px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -636,6 +659,7 @@ margin: 0;
 }
 
 .categories-products-title {
+    align-self: center;
     font-family: "Raleway ExtraBold";
     font-size: 18px;
     font-weight: 800;
@@ -1936,6 +1960,19 @@ left: -9px;
     margin-bottom: 44px;
 }
 
+.catalog-more:hover {
+    border: 3px solid black;
+}
+
+.catalog-more:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.catalog-more:active {
+    opacity: 0.3;
+}
+
 .pagination-container {
     display: flex;
     flex-direction: column;
@@ -2033,14 +2070,25 @@ left: -9px;
     margin-left: auto;
 }
 
-/* .pagination-link:first-of-type:hover {
-    background: #DCDCDC;
-    cursor: pointer;
-} */
+.pagination-item:nth-of-type(2) .pagination-link:hover,
+.pagination-item:nth-of-type(3) .pagination-link:hover,
+.pagination-item:nth-of-type(4) .pagination-link:hover,
+.pagination-item:nth-of-type(5) .pagination-link:hover, 
+.pagination-item:nth-of-type(6) .pagination-link:hover {
+    color: rgba(68, 68, 68, 1);
+}
 
 .pagination-link:focus {
     outline: 2px solid #AF4FFF;
     outline-offset: 2px;
+}
+
+.pagination-item:nth-of-type(2) .pagination-link:active,
+.pagination-item:nth-of-type(3) .pagination-link:active,
+.pagination-item:nth-of-type(4) .pagination-link:active,
+.pagination-item:nth-of-type(5) .pagination-link:active, 
+.pagination-item:nth-of-type(6) .pagination-link:active {
+    opacity: 0.3;
 }
 
 .pagination-item:first-of-type .pagination-link:hover, .pagination-item:last-of-type .pagination-link:hover {

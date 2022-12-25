@@ -5,13 +5,14 @@
     <meta charset="utf-8">
     <title>HTML Academy: Сайт
         Интеренет-магазина "Девайс" автор Оглоблин Александр г. Киров</title>
-    <link rel="stylesheet" href="css\styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="site-device">
+    <h1 class="visually-hidden">Интеренет-магазин "Девайс"</h1>
     <header class="page-header">
         <a class="logo-header-link" href="index.html">
-            <img class="logo-header" src="img\logo-header.svg" width="145" height="36"
+            <img class="logo-header" src="img/logo-header.svg" width="145" height="36"
                 alt="Логотип Интеренет-магазин Девайс"></a>
         <div class="header-container-menu">
             <form class="header-search" action="https://echo.htmlacademy.ru/courses" method="post">
@@ -21,15 +22,15 @@
             <nav>
                 <ul class="header-list">
                     <li class="header-link-entrance"><a class="header-link" href="#"><img width="13" height="12"
-                                class="header-item-icon" src="img\entrance.svg" alt="Иконка входа">
+                                class="header-item-icon" src="img/entrance.svg" alt="Иконка входа">
                             <span class="header-item-entrance">Войти</span></a>
                     </li>
                     <li class="header-item"><a class="header-link" href=""><img width="10" height="12"
-                                class="header-item-icon" src="img\comparison.svg" alt="Иконка Сравнить">
+                                class="header-item-icon" src="img/comparison.svg" alt="Иконка Сравнить">
                             Сравнить</a>
                     </li>
                     <li class="header-item-basket"><a class="header-link" href=""><img width="31" height="21"
-                                class="header-item-icon" src="img\basket-2-products.svg" alt="Иконка Корзина">
+                                class="header-item-icon" src="img/basket-2-products.svg" alt="Иконка Корзина">
                             <span class="header-item">
                                 Корзина</span></a>
                     </li>
@@ -39,24 +40,20 @@
         <section class="categories-products">
             <div class="categories-products-container">
                 <button class="header-catalog-button" type="button">
-                    <ul class="catalog-products-buttons">
-                        <li class="categories-products-list-button">
-                            <h2 class="categories-products-title">КАТАЛОГ ТОВАРОВ</h2>
-                        </li>
-                        <li class="categories-products-symbol"><svg xmlns="http://www.w3.org/2000/svg" width="50"
-                                height="51" fill="none">
-                                <circle cx="25" cy="25.4" r="24" stroke="#000" stroke-width="2" opacity=".3" />
-                                <g clip-path="url(#a)" opacity=".3">
-                                    <path fill="#000" d="M33 24.4h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" />
-                                </g>
-                                <defs>
-                                    <clipPath id="a">
-                                        <path fill="#fff" d="M17 17.4h16v16H17z" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </li>
-                    </ul>
+                    <span class="categories-products-title">КАТАЛОГ ТОВАРОВ</span>
+                    <span class="categories-products-symbol">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="51" fill="none">
+                            <circle cx="25" cy="25.4" r="24" stroke="#000" stroke-width="2" opacity=".3" />
+                            <g clip-path="url(#a)" opacity=".3">
+                                <path fill="#000" d="M33 24.4h-7v-7h-2v7h-7v2h7v7h2v-7h7v-2Z" />
+                            </g>
+                            <defs>
+                                <clipPath id="a">
+                                    <path fill="#fff" d="M17 17.4h16v16H17z" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </span>
                 </button>
                 <section class="service">
                     <h2 class="visually-hidden" hidden>Услуги</h2>
@@ -88,11 +85,11 @@
         </section>
     </header>
     <main class="main-index main-container">
-        <h1 class="visually-hidden">Интеренет-магазин "Девайс"</h1>
+
         <section class="index-gallery">
             <h2 class="visually-hidden" hidden>Фото девайса</h2>
             <figure class="index-product-item">
-                <img class="slider-image" src="img\img-catalog\quadro-copter.png" width="560" height="560"
+                <img class="slider-image" src="img/img-catalog/quadro-copter.png" width="560" height="560"
                     alt="фото квадрокоптера">
                 <figcaption class="index-product-slogan">
                     <p class="device-rating-number">01</p>
@@ -116,7 +113,7 @@
                 </figcaption>
             </figure>
             <figure class="index-product-item">
-                <img class="slider-image" src="img\img-catalog\fitness-bracelet.png" width="560" height="560"
+                <img class="slider-image" src="img/img-catalog/fitness-bracelet.png" width="560" height="560"
                     alt="фото фитнес-браслет">
                 <figcaption class="index-product-slogan">
                     <p class="device-rating-number">02</p>
@@ -136,7 +133,7 @@
                 </figcaption>
             </figure>
             <figure class="index-product-item">
-                <img class="slider-image" src="img\img-catalog\selfy-stick.png" width="560" height="560"
+                <img class="slider-image" src="img/img-catalog/selfy-stick.png" width="560" height="560"
                     alt="селфи-палка">
                 <figcaption class="index-product-slogan">
                     <p class="device-rating-number">03</p>
@@ -162,14 +159,18 @@
                 </figcaption>
             </figure>
             <ul class="slider-buttons">
-                <button class="slider-button-slider-prev" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="20" height="60" fill="none">
-                        <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-                    </svg></button>
-                <button class="slider-button-slider-next" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                        width="20" height="60" fill="none">
-                        <path fill="#000" d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
-                    </svg></button>
+                <li>
+                    <button class="slider-button slider-prev" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="60" fill="none">
+                            <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+                        </svg></button>
+                </li>
+                <li>
+                    <button class="slider-button slider-next" type="button"><svg xmlns="http://www.w3.org/2000/svg"
+                            width="20" height="60" fill="none">
+                            <path fill="#000" d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
+                        </svg></button>
+                </li>
             </ul>
             <ol class="slider-pagination">
                 <li class="slider-pagination-item">
