@@ -266,6 +266,7 @@ a {
 }
 
 .header-item-basket {
+    position: relative;
     margin-left: auto;
 }
 
@@ -2161,4 +2162,14 @@ left: -9px;
 
 .select-control span {
     padding-right: 5px;
+}
+
+.popover {
+    position: absolute;
+    top: 26px;
+    right: 0px;
+    box-sizing: border-box;
+    width: 320px;
+    background: black;
+    color: white;
 }
