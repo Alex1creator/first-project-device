@@ -6,6 +6,7 @@
     <title>HTML Academy: Сайт
         Интеренет-магазина "Девайс" автор Оглоблин Александр г. Киров</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon-device.ico">
 </head>
 
 <body class="site-device">
@@ -34,12 +35,36 @@
                             <span class="header-item">
                                 Корзина</span></a>
                         <div class="popover popover-cart">
-                            <button class="popover-close-button button button-light">2<span
-                                    class="visually-hidden">закрыть</span></button>
+                            <!-- <div class="popover-triangle"></div> -->
                             <div class="popover-content">
                                 <h2 class="popover-title visually-hidden">корзина</h2>
-                                <img width="39px" height="43px" src="" alt="любительская селфи-палка">
-
+                                <ul class="popover-product-list">
+                                    <li class="popover-product-item">
+                                        <a class="popover-product-link" href="№">
+                                            <img class="popover-product-img" width="39px" height="43px"
+                                                src="img/img-catalog/popover-selfy-stick.jpg"
+                                                alt="любительская селфи-палка">
+                                            <p class="popover-product-name">Любительская селфи-палка</p>
+                                        </a>
+                                        <button class="popover-product-close visually-hidden">удалить товар из
+                                            корзины</button>
+                                    </li>
+                                    <li class="popover-product-item">
+                                        <a class="popover-product-link" href="№">
+                                            <img class="popover-product-img" width="39px" height="43px"
+                                                src="img/img-catalog/popover-selfy-prof.jpg"
+                                                alt="любительская селфи-палка">
+                                            <p class="popover-product-name">Профессиональная селфи-палка</p>
+                                        </a>
+                                        <button class="popover-product-close visually-hidden">удалить товар из
+                                            корзины <span class="popover-marker"></span></button>
+                                    </li>
+                                </ul>
+                                <ul class="popover-sum-list">
+                                    <li class="popover-sum-item">Товаров:2</li>
+                                    <li class="popover-sum-item">2000 ₽</li>
+                                </ul>
+                                <button class="popover-basket-open">открыть корзину</button>
                             </div>
                         </div>
                     </li>

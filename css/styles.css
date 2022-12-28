@@ -2166,10 +2166,50 @@ left: -9px;
 
 .popover {
     position: absolute;
-    top: 26px;
-    right: 0px;
+    top: 30px;
+    right: -77px;
+    display: flex;
+    flex-direction: column;
     box-sizing: border-box;
     width: 320px;
-    background: black;
     color: white;
+}
+
+.popover::before {
+    content: "";
+    width: 320px;
+    height: 6px;
+    background-image: url(../img/triangle.svg);
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.popover-content {
+    height: 100%;
+    background: black;
+}
+
+.popover-open {
+    display: block;
+}
+
+.popover-product-link {
+    display: flex;
+    width: 250px;
+    margin-bottom: 20px;
+    font-family: "Rubik-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.popover-product-name {
+    color: white;
+    padding-left: 23px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
 }
