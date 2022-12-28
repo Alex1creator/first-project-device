@@ -2185,6 +2185,9 @@ left: -9px;
 }
 
 .popover-content {
+    /* display: grid;
+    grid-template-columns: 20px 39px 23px 58px 10px 83px 34px 23px 10px 20px;
+    grid-template-areas: "border foto gap1 text1 text2 text3 text4 text5 close border2" ; */
     height: 100%;
     background: black;
 }
@@ -2200,16 +2203,28 @@ left: -9px;
     font-family: "Rubik-regular";
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 16px;
+    line-height: 20px;
 }
 
 .popover-product-name {
     color: white;
     padding-left: 23px;
-    font-family: 'Rubik';
+    /* font-family: 'Rubik';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 20px;
+    line-height: 20px; */
+}
+
+.popover-product-close::before {
+    content: "";
+    width: 14px;
+    height: 2px;
+    background: white;
+    transform: rotate(45deg);
+}
+
+.popover-product-img {
+    vertical-align: middle;
 }
