@@ -31,6 +31,7 @@ body {
     font-family: "Raleway ExtraBold";
     font-size: 18px;
     font-weight: 800;
+    font-style: normal;
     line-height: 21px;
     color: black;
     margin: 0 auto;
@@ -2173,6 +2174,7 @@ left: -9px;
     box-sizing: border-box;
     width: 320px;
     color: white;
+    z-index: 1;
 }
 
 .popover::before {
@@ -2185,9 +2187,6 @@ left: -9px;
 }
 
 .popover-content {
-    /* display: grid;
-    grid-template-columns: 20px 39px 23px 58px 10px 83px 34px 23px 10px 20px;
-    grid-template-areas: "border foto gap1 text1 text2 text3 text4 text5 close border2" ; */
     height: 100%;
     background: black;
 }
@@ -2196,10 +2195,26 @@ left: -9px;
     display: block;
 }
 
+.popover-product-item {
+    display: grid;
+    grid-template-columns: 250px 20px 10px;
+    grid-template-areas: "product gap close";
+    width: 280px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+.popover-product-item:not(:last-of-type) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
 .popover-product-link {
+    grid-area: product;
     display: flex;
     width: 250px;
-    margin-bottom: 20px;
     font-family: "Rubik-regular";
     font-style: normal;
     font-weight: 400;
@@ -2207,24 +2222,101 @@ left: -9px;
     line-height: 20px;
 }
 
+.popover-product-link:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.popover-product-link:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.popover-product-link:active {
+    opacity: 0.3;
+}
+
 .popover-product-name {
     color: white;
     padding-left: 23px;
-    /* font-family: 'Rubik';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px; */
 }
 
-.popover-product-close::before {
-    content: "";
-    width: 14px;
-    height: 2px;
-    background: white;
-    transform: rotate(45deg);
+.popover-product-close {
+    grid-area: close;
+    display: block;
+    height: 10px;
+    line-height: 10px;
+    padding: 0;
+    margin: 0;
+    background: black;
+    border: none;
+} 
+
+.popover-product-close:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.popover-product-close:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.popover-product-close:active {
+    opacity: 0.3;
 }
 
 .popover-product-img {
     vertical-align: middle;
+}
+
+.popover-sum-list {
+    display: grid;
+    grid-template-rows: 44px;
+    grid-template-columns: 20px 120px 10px 150px 20px;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    background: rgba(26, 26, 26, 1);
+}
+
+.popover-sum-item:first-of-type {
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.popover-sum-item:last-of-type {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    text-align: end;
+}
+
+.popover-basket-open {
+    width: 280px;
+    background: white;
+    color: black;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-family: "Raleway ExtraBold";
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    line-height: 21px;
+    text-align: center;
+    padding: 14px 20px;
+    margin: 20px;
+    border: none;
+}
+
+.popover-basket-open:hover {
+    background: #FFE17F;
+}
+
+.popover-basket-open:focus, .popover-basket-open:focus-visible {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.popover-basket-open:active {
+    color: rgba(0, 0, 0, 0.3);
 }
