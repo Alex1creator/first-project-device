@@ -446,6 +446,20 @@
                 <h2 class="modal-title">Доставка под заказ</h2>
                 <button class="modal-close-button" type="button"><span class="visually-hidden">закрыть</span></button>
             </div>
+            <fieldset class="modal-content">
+                <legend class="visually-hidden">форма заявки на доставку товара</legend>
+                <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+                    <label class="form-field modal-name">Ваше имя:<input class="modal-name-field" type="text"
+                            name="username" placeholder="введите имя"></label>
+                    <label class="form-field modal-email">Ваш e- mail:<input class="modal-email-field" type="email"
+                            name="user-email" placeholder="почта"></label>
+                    <label class="form-field modal-products">Что нужно привезти:<input class="modal-products-field"
+                            type="text" name="products-order" placeholder="в свободной форме"></label>
+                    <label class="form-field modal-quantity">Количество:<span class="modal-mark-info"></span><input
+                            class="modal-quantity-field" type="number" name="quantity"></label>
+                    <button class="form-field modal-order-button" type="submit"><span>отправить</span></button>
+                </form>
+            </fieldset>
         </section>
     </div>
 </body>

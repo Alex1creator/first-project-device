@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: "Rubik-bold";
+    font-family: "Rubik-bold", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-display: swap;
@@ -2328,7 +2328,7 @@ left: -9px;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -2347,8 +2347,10 @@ left: -9px;
     display: flex;
     justify-content: space-between;
     width: 760px;
-    margin: 72px auto;
-
+    margin-top: 62px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 42px;
 }
 
 .modal-title {
@@ -2362,8 +2364,62 @@ left: -9px;
 }
 
 .modal-close-button {
-    background-image: url("img/cross-modal.svg");
+    width: 26px;
+    background-color: white;
+    background-image: url("../img/cross-modal.svg");
     background-repeat: no-repeat;
     background-position: center;
     border: none;
+    padding: 0;
+}
+
+.modal-content {
+    border: none;
+    padding: 0;
+}
+
+.modal-form {
+    display: grid;
+    width: 760px;
+    grid-template-columns: 360px 40px 140px 40px 180px;
+    font-family: "Rubik-bold", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.02em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 72px;
+}
+
+.modal-name {
+    grid-column: 1/2;
+}
+
+.modal-email {
+    grid-column: 3/6;
+}
+
+.modal-products {
+    grid-column: 1/4;
+}
+
+.modal-quantity {
+    grid-column: 5/6;
+}
+
+.modal-order-button {
+    grid-column: 1/2;
+}
+
+.modal-name-field {
+    box-sizing: border-box;
+    width: 360px;
+    /* border: ; */
+}
+
+.modal-email-field {
+    box-sizing: border-box;
+    width: 360px;
 }
