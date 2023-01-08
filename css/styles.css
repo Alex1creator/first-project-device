@@ -2408,6 +2408,7 @@ left: -9px;
 
 .modal-quantity {
     grid-column: 5/6;
+    position: relative;
 }
 
 .modal-order-button {
@@ -2452,9 +2453,47 @@ left: -9px;
     width: 540px;
 }
 
+.quantity-field {
+    background-color: #F0F0F0;
+    color: black;
+    font-family: "Rubik-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    border: none;
+    /* padding-left: 20px;
+    padding-right: 44px; */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 14px;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
 .modal-quantity-field {
     box-sizing: border-box;
-    width: 180px;
+    text-align: center;
+}
+
+.increment-quantity {
+    background-image: url("../img/plus16x16.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.increment-quantity:hover {
+    opacity: 0.8;
+    background-color: #dbdbdb;
+}
+
+..increment-quantity:focus {
+
+}
+
+.increment-quantity:active {
+
 }
 
 .modal-order-button {
@@ -2470,4 +2509,44 @@ left: -9px;
     padding: 10px 5px;
     border: none;
     background: linear-gradient(white, white 16px, #FFE17F 16px, #FFE17F 24px, white 24px, white);
+}
+
+.modal-order-button:hover {
+    background: #FFE17F;
+    cursor: pointer;
+}
+
+.modal-order-button:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+}
+
+.modal-order-button:active {
+
+}
+
+.modal-mark-info {
+    position: absolute;
+    top: -2px;
+    left: 120px;
+    display: block;
+    line-height: 12px;
+}
+
+
+/* .modal-mark-info::after {
+    display: none;
+    content: "Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
+    к провозу багажа.";
+}
+
+
+.modal-mark-info:hover .modal-mark-info::after {
+   display: block;
+} */
+
+.control-quantity {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
 }
