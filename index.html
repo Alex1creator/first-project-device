@@ -459,13 +459,16 @@
                         <label for="product-quantity">Количество:<span class="modal-mark-info"><img
                                     src="img/modal-info.svg" alt="дополнительная информация"></span></label>
                         <ul class="control-quantity">
-                            <li><button class="quantity-field decrement-quantity"></button></li>
+                            <li><button class="quantity-field decrement-quantity"><span
+                                        class="visually-hidden">уменьшить на единицу</span></button></li>
                             <li>
                                 <input class="quantity-field modal-quantity-field" id="product-quantity" type="text"
-                                    pattern="\d*" name="quantity" placeholder="1">
+                                    pattern="\d*" name="quantity" placeholder="1"><span
+                                    class="visually-hidden">количество товара</span>
                             </li>
                             <li>
-                                <button class="quantity-field increment-quantity"></button>
+                                <button class="quantity-field increment-quantity"><span
+                                        class="visually-hidden">увеличить на единицу</span></button>
                             </li>
                         </ul>
                     </div>
