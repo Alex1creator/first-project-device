@@ -452,18 +452,29 @@
                     <label class="modal-name">Ваше имя:<input class="form-field modal-name-field" type="text"
                             name="username" placeholder="Введите имя"></label>
                     <label class="modal-email">Ваш e-mail:<input class="form-field modal-email-field" type="email"
-                            name="user-email" placeholder="почта"></label>
+                            name="user-email" placeholder="почта" required><span class="invalid-email">Забавный у вас
+                            адрес</span></label>
                     <label class="modal-products">Что нужно привезти:<input class="form-field modal-products-field"
                             type="text" name="products-order" placeholder="В свободной форме"></label>
                     <div class="modal-quantity">
-                        <label for="product-quantity">Количество:<span class="modal-mark-info"><img
-                                    src="img/modal-info.svg" alt="дополнительная информация"></span></label>
-                        <ul class="control-quantity">
+                        <label for="product-quantity">Количество:<button class="modal-mark-info"><img
+                                    src="img/modal-info.svg" alt="дополнительная информация"><span
+                                    class="visually-hidden">посмотреть дополнительную информацию</span></button>
+                            <span class="extra-info-wrap">
+                                <span class="extra-info-content">
+                                    <span class="extra-info">Постараемся найти, сколько нужно. Привезём сколько
+                                        получится
+                                        по
+                                        требованиям к провозу багажа.</span>
+                                </span>
+                            </span>
+                        </label>
+                        <ul class="control-quantity invalid-quantity">
                             <li><button class="quantity-field decrement-quantity"><span
                                         class="visually-hidden">уменьшить на единицу</span></button></li>
                             <li>
                                 <input class="quantity-field modal-quantity-field" id="product-quantity" type="text"
-                                    pattern="\d*" name="quantity" placeholder="1"><span
+                                    pattern="\d[1-10]{1,3}" name="quantity" placeholder="1"><span
                                     class="visually-hidden">количество товара</span>
                             </li>
                             <li>
@@ -474,7 +485,9 @@
                     </div>
                     <button class="modal-order-button" type="submit"><span>отправить</span></button>
                 </form>
+
             </fieldset>
+
         </section>
     </div>
 </body>

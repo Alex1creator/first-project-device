@@ -2410,15 +2410,14 @@ left: -9px;
     grid-column: 3/6;
 }
 
-.modal-email::after {
-    content: "Забавный у вас адрес";
-    color: #FF3D3D;
+.invalid-email {
+    color: black;
     font-family: "Rubik-regular";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-}
+} 
 
 .modal-products {
     grid-column: 1/4;
@@ -2442,11 +2441,11 @@ left: -9px;
 }
 
 .modal-name-field:invalid {
-
+    outline: 2px solid red;
 }
 
 .modal-name-field:disabled {
-
+    opacity: 0.3;
 }
 
 .form-field {
@@ -2485,20 +2484,31 @@ left: -9px;
     background-image: url("../img/envelop.svg");
     background-repeat: no-repeat;
     background-position: right 20px top 22px;
-    box-shadow: inset 0 0 0 2px red;
 }
 
 .modal-email-field:invalid {
+    box-shadow: inset 0 0 0 2px red;
+}
 
+.modal-email-field:invalid + .invalid-email {
+    color: red;
 }
 
 .modal-email-field:disabled {
-    
+    opacity: 0.3;
 }
 
 .modal-products-field {
     box-sizing: border-box;
     width: 540px;
+}
+
+.modal-products-field:invalid {
+    box-shadow: inset 0 0 0 2px red;
+}
+
+.modal-products-field:disabled {
+    opacity: 0.3;
 }
 
 .quantity-field {
@@ -2512,7 +2522,6 @@ left: -9px;
     border: none;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-top: 14px;
     width: 60px;
     height: 60px;
     cursor: pointer;
@@ -2521,6 +2530,52 @@ left: -9px;
 .modal-quantity-field {
     box-sizing: border-box;
     text-align: center;
+}
+
+.modal-quantity-field:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+    opacity: 0.99;
+}
+
+.modal-quantity-field:active {
+    opacity: 0.3;
+}
+
+.modal-quantity-field:invalid {
+    border: 2px solid red;
+}
+
+.modal-quantity-field:disabled {
+    opacity: 0.3;
+}
+
+.modal-quantity-field:focus-visible {
+    border: none;
+}
+
+.decrement-quantity {
+    background-image: url("../img/minus16x16.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.decrement-quantity:hover {
+    background-image: url("../img/plus16x16.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    background-color: #dbdbdb;
+}
+
+.decrement-quantity:focus {
+    outline: 2px solid #AF4FFF;
+    outline-offset: 2px;
+    opacity: 0.99;
+}
+
+.decrement-quantity:focus-visible {
+    border: none;
 }
 
 .increment-quantity {
@@ -2540,7 +2595,7 @@ left: -9px;
 }
 
 .increment-quantity:active {
-
+    opacity: 0.3;
 }
 
 .modal-order-button {
@@ -2569,7 +2624,7 @@ left: -9px;
 }
 
 .modal-order-button:active {
-
+    opacity: 0.3;
 }
 
 .modal-mark-info {
@@ -2577,63 +2632,64 @@ left: -9px;
     top: -2px;
     left: 120px;
     display: block;
-    line-height: 12px;
+    line-height: 9px;
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.modal-mark-info:focus {
+    outline: 2px solid #AF4FFF;
 }
 
 
-/* .modal-mark-info::after {
+.extra-info-wrap {
+    position: absolute;
+    top: 27px;
+    left: -19px;
     display: none;
-    content: "Постараемся найти, сколько нужно. Привезём сколько получится по требованиям 
-    к провозу багажа.";
+    flex-direction: column;
+    width: 200px;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
 }
 
+.extra-info-wrap::before {
+    content: "";
+    width: 200px;
+    height: 6px;
+    background-image: url(../img/triangle.svg);
+    background-repeat: no-repeat;
+    background-position: 78%;
+}
 
-.modal-mark-info:hover .modal-mark-info::after {
-   display: block;
-} */
+.extra-info-content {
+    background-color: #000000;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.extra-info {
+    display: inline-block;
+    width: 164px;
+    font-family: "Rubik-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    text-align: left;
+}
+
+.modal-mark-info:hover + .extra-info-wrap {
+   display: flex;
+}
 
 .control-quantity {
     position: relative;
     display: flex;
     justify-content: space-between;
     margin: 0;
+    margin-top: 14px;
 }
-
-.control-quantity li:first-of-type::before {
-    position: absolute;
-    top: 43px;
-    left: 22px;
-    content: "";
-    width: 16px;
-    height: 2px;
-    background: black;
-}
-
-/* .decrement-quantity {
-    position: relative;
-} */
-
-.decrement-quantity:hover .control-quantity li:first-of-type::before {
-    display: none;
-}
-
-.decrement-quantity:hover {
-    background-image: url("../img/plus16x16.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-    background-color: #dbdbdb;
-}
-
-.decrement-quantity:focus {
-    outline: 2px solid #AF4FFF;
-    outline-offset: 2px;
-    z-index: 1;
-}
-
-.decrement-quantity:focus-visible {
-    border: none;
-}
-
 
 
