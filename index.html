@@ -132,17 +132,46 @@
         <section class="index-gallery">
             <h2 class="visually-hidden" hidden>Фото девайса</h2>
             <figure class="index-product-item">
-                <img class="slider-image" src="img/img-catalog/quadro-copter.png" width="560" height="560"
-                    alt="фото квадрокоптера">
+                <div class="img-wrapper"><img class="slider-image" src="img/img-catalog/quadro-copter.png" width="560"
+                        height="560" alt="фото квадрокоптера">
+                    <ul class="slider-buttons">
+                        <li>
+                            <button class="slider-button slider-prev" type="button"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none">
+                                    <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
+                                </svg></button>
+                        </li>
+                        <li>
+                            <button class="slider-button slider-next" type="button"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="20" height="60" fill="none">
+                                    <path fill="#000" d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
+                                </svg></button>
+                        </li>
+                    </ul>
+                </div>
                 <figcaption class="index-product-slogan">
                     <p class="device-rating-number">01</p>
                     <p class="index-slogan">Порхает как бабочка, жалит как
                         пчела!</p>
                     <p class="index-slogan-description">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным
-                        лазером, замаскированным под
-                        стандартную камеру.
+                        лазером, замаскированным под стандартную камеру.
                     </p>
-                    <p class="about-device-link"><a href="#">подробнее</a></p>
+                    <ol class="slider-pagination">
+                        <li class="slider-pagination-item">
+                            <button class="slider-pagination-button slider-pagination-button-current"
+                                type="button"><span class="slider-pagination-focus"></span><span
+                                    class="visually-hidden">1 фото</span></button>
+                            <button class="slider-pagination-button" type="button"><span
+                                    class="slider-pagination-focus"></span><span class="visually-hidden">2
+                                    фото</span></button>
+                            <button class="slider-pagination-button" type="button"><span
+                                    class="slider-pagination-focus"></span><span class="visually-hidden">3
+                                    фото</span></button>
+                        </li>
+                    </ol>
+                    <p class="about-device-link"><a href="#">подробнее</a>
+                    </p>
+
                     <table class="device-characteristics">
                         <tr class="device-characteristics-item">
                             <td>800 м</td>
@@ -155,30 +184,6 @@
                     </table>
                 </figcaption>
             </figure>
-            <ul class="slider-buttons">
-                <li>
-                    <button class="slider-button slider-prev" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="60" fill="none">
-                            <path fill="#000" d="M20 60h-3.5L0 30 16.5 0H20L3.8 30 20 60Z" />
-                        </svg></button>
-                </li>
-                <li>
-                    <button class="slider-button slider-next" type="button"><svg xmlns="http://www.w3.org/2000/svg"
-                            width="20" height="60" fill="none">
-                            <path fill="#000" d="M0 0h3.5L20 30 3.5 60H0l16.2-30L0 0Z" />
-                        </svg></button>
-                </li>
-            </ul>
-            <ol class="slider-pagination">
-                <li class="slider-pagination-item">
-                    <button class="slider-pagination-button slider-pagination-button-current" type="button"><span
-                            class="slider-pagination-focus"></span><span class="visually-hidden">1 фото</span></button>
-                    <button class="slider-pagination-button" type="button"><span
-                            class="slider-pagination-focus"></span><span class="visually-hidden">2 фото</span></button>
-                    <button class="slider-pagination-button" type="button"><span
-                            class="slider-pagination-focus"></span><span class="visually-hidden">3 фото</span></button>
-                </li>
-            </ol>
             <figure class="index-product-item">
                 <img class="slider-image" src="img/img-catalog/fitness-bracelet.png" width="560" height="560"
                     alt="фото фитнес-браслет">
@@ -457,9 +462,9 @@
                     <label class="modal-products">Что нужно привезти:<input class="form-field modal-products-field"
                             type="text" name="products-order" placeholder="В свободной форме"></label>
                     <div class="modal-quantity">
-                        <label for="product-quantity">Количество:<button class="modal-mark-info"><img
-                                    src="img/modal-info.svg" alt="дополнительная информация"><span
-                                    class="visually-hidden">посмотреть дополнительную информацию</span></button>
+                        <label>Количество:<button class="modal-mark-info" type="button"><img src="img/modal-info.svg"
+                                    alt="дополнительная информация"><span class="visually-hidden">посмотреть
+                                    дополнительную информацию</span></button>
                             <span class="extra-info-wrap">
                                 <span class="extra-info-content">
                                     <span class="extra-info">Постараемся найти, сколько нужно. Привезём сколько
