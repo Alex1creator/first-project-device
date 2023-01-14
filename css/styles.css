@@ -301,6 +301,7 @@ a {
 .header-catalog-button {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     width: 300px;
     border: none;
     padding: 0;
@@ -545,7 +546,7 @@ height: 560px;
     display: flex;
     justify-content: space-between;
     width: 1160px;
-    height: 560px;
+    /* height: 560px; */
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 0;
@@ -752,7 +753,6 @@ margin: 0;
 }
 
 .service-buttons {
-    width: 1440px;
     margin: 0 auto;
     margin-bottom: 69px;
     background: linear-gradient(white, white 104px, #F0F0F0 104px, #F0F0F0 391px, white 391px, white);
@@ -905,8 +905,6 @@ margin: 0;
 .delivery-description-title:active {
     opacity: 0.3;
 }
-
-/* hovers, focuses     */
 
 .service-buttons-item:focus {
     color: #FFE17F;
@@ -1159,6 +1157,7 @@ padding-top: 63px;
 .mailing-form {
     display: flex;
     width: 823px;
+    max-height: 57px;
 }
 
 .mailing-form input:first-of-type {
@@ -1351,6 +1350,8 @@ padding-top: 63px;
 }
 
 .footer-contacts-phone {
+    display: block;
+    width: 180px;
     font-family: "Rubik-regular";
     font-size: 16px;
     line-height: 20px;
@@ -1399,7 +1400,7 @@ padding-top: 63px;
     background: #FFC700;
     align-self: center;
     display: inline;
-    margin-right: 420px;
+    margin-right: 56px;
 }
 
 
@@ -1444,6 +1445,18 @@ padding-top: 63px;
 .footer-social-item {
     margin-left: 7.5px;
     margin-right: 7.5px;
+}
+
+.footer-social-item:first-of-type {
+    margin-left: auto;
+}
+
+.footer-social-item:last-of-type {
+    margin-right: auto;
+}
+
+.footer-made-link {
+    margin-left: 20px;
 }
 
 .footer-made-link:hover path {
