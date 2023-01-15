@@ -1301,28 +1301,14 @@ padding-top: 63px;
 }
 
 .footer-services {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 162px 157px 131px;
     width: 450px;
     padding-inline-start: 0;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     margin: 0;
     margin-top: 4px;
-}
-
-.footer-services-item:nth-child(2n) {
-    margin: 0 10px;
-}
-
-.footer-services-item:first-of-type {
-    padding-right: 10px;
-    margin-right: auto;
-}
-
-.footer-services-item:last-of-type {
-    padding-left: 10px;
-    margin-left: auto;
 }
 
 .footer-services-link {
@@ -1343,7 +1329,6 @@ padding-top: 63px;
     opacity: 0.3;
     outline: none;
 }
-
 
 .contacts-address {
     font-family: "Rubik-regular";
