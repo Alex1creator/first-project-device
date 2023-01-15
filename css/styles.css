@@ -753,10 +753,10 @@ margin: 0;
 }
 
 .service-buttons {
+    position: relative;
     margin: 0 auto;
     margin-bottom: 69px;
-    background: linear-gradient(white, white 104px, #F0F0F0 104px, #F0F0F0 391px, white 391px, white);
-    position: relative;
+    background: linear-gradient(white, white 104px, #F0F0F0 104px, #F0F0F0 69%, white 69%, white);
 }
 
 .service-buttons-item {
@@ -770,9 +770,10 @@ margin: 0;
     letter-spacing: 0.2em;
     border: none;
     width: 280px;
-    height: 40px;
     text-align: left;
     padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     margin-top: 64px;
 }
 
@@ -864,8 +865,8 @@ margin: 0;
 
 .delivery-description-title {
     display: flex;
+    align-items: center;
     width: 1160px;
-    height: 100px;
     margin: 0 auto;
     color: black;
     text-decoration: none;
@@ -946,7 +947,8 @@ margin: 0;
 }
 
 .button-mailing-link {
-    width: 259px;
+    display: inline-block;
+    width: 223px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     background: linear-gradient(white, white 16px, #FFE17F 16px, #FFE17F 24px, white 24px, white);
@@ -955,7 +957,6 @@ margin: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 35px;
-    padding-right: 32px;
 }
 
 .button-mailing-link a {
@@ -1035,10 +1036,9 @@ margin: 0;
 }
 
 .about-link a {
+    display: inline-block;
     padding-left: 24px;
     padding-right: 18px;
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 .about-link:hover {
@@ -1302,8 +1302,8 @@ padding-top: 63px;
 
 .footer-services {
     display: flex;
+    flex-wrap: wrap;
     width: 450px;
-    justify-content: space-between;
     padding-inline-start: 0;
     text-transform: uppercase;
     letter-spacing: 0.2em;
@@ -1311,6 +1311,19 @@ padding-top: 63px;
     margin-top: 4px;
 }
 
+.footer-services-item:nth-child(2n) {
+    margin: 0 10px;
+}
+
+.footer-services-item:first-of-type {
+    padding-right: 10px;
+    margin-right: auto;
+}
+
+.footer-services-item:last-of-type {
+    padding-left: 10px;
+    margin-left: auto;
+}
 
 .footer-services-link {
     color: white;
