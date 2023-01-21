@@ -25,15 +25,20 @@
     url("../fonts/Raleway-ExtraBold.woff")  format("woff");
 }
 
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
   line-height: 21px;
-  color: black;
+  color: #000000;
   margin: 0 auto;
 }
 
@@ -48,18 +53,6 @@ body {
   overflow: hidden;
 }
 
-li {
-  list-style-type: none;
-}
-
-ul {
-  padding-inline-start: 0;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
 /* header styles*/
 
 .page-header {
@@ -67,7 +60,7 @@ a {
   margin-top: 0;
   margin-left: auto;
   margin-right: auto;
-  background: linear-gradient(white, white 40px, #FFE17F 40px, #FFE17F);
+  background: linear-gradient(#ffffff, #ffffff 40px, hsl(46, 100%, 75%) 40px, hsl(46, 100%, 75%));
   z-index: 1;
 }
 
@@ -76,6 +69,8 @@ a {
   width: 145px;
   margin-top: 17.39px;
   margin-left: 60px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .logo-header:hover {
@@ -83,7 +78,7 @@ a {
 }
 
 .logo-header-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid hsl(273, 100%, 65%);
   outline-offset: 2px;
 }
 
@@ -94,10 +89,12 @@ a {
 .header-link-entrance {
   width: 200px;
   margin-right: 57px;
+  text-decoration: none;
+  color: #000000;
 }
 
 .header-link {
-  color: black;
+  color: #000000;
   text-decoration: none;
   padding-bottom: 2px;
 }
@@ -108,7 +105,7 @@ a {
 }
 
 .header-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid hsl(273, 100%, 65%);
   outline-offset: 2px;
 }
 
@@ -122,17 +119,15 @@ a {
   margin: 0;
 }
 
-
-
 .footer-services-link {
-  color: black;
+  color: #000000;
   text-decoration: none;
 }
 
 .categories-products-link {
-  color: black;
+  color: #000000;
   text-decoration: none;
-  background-color: #FFE17F;
+  background-color: hsl(46, 100%, 75%);
   letter-spacing: 0.2em;
 }
 
@@ -145,12 +140,12 @@ a {
 }
 
 .categories-products-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid hsl(273, 100%, 65%);
   outline-offset: 2px;
 }
 
 .service-link {
-  color: black;
+  color: #000000;
   text-decoration: none;
   letter-spacing: 0.2em;
 }
@@ -165,7 +160,7 @@ a {
 
 .header-search {
   display: flex;
-  background-color: #FFE17F;
+  background-color: hsl(46, 100%, 75%);
   width: 530px;
   max-height: 40px;
   margin-top: 26px;
@@ -179,87 +174,85 @@ a {
   padding-bottom: 8px;
   padding-left: 47px;
   box-sizing: border-box;
-  border: black solid 2px;
+  border: #000000 solid 2px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
   border-right: 0;
   margin: 0;
-  background-color: #FFE17F;
+  background-color: hsl(46, 100%, 75%);
   background-image: url("../img/magnifier.svg");
   background-repeat: no-repeat;
   background-position: 5% 50%;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
 
-.header-search-btn{
+.header-search-btn {
   padding-left: 55px;
   padding-right: 53px;
   padding-top: 8px;
   padding-bottom: 8px;
   box-sizing: border-box;
   margin: 0;
-  background-color: #FFE17F;
-  border: 2px solid black ;
+  background-color: #ffe17f;
+  border: 2px solid #000000;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
 }
 
 .header-search-btn:hover {
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  background-color: #000000;
 }
 
 .header-search-btn:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid hsl(273, 100%, 65%);
   outline-offset: 2px;
-  border: black solid 2px;
+  border: #000000 solid 2px;
   border-bottom-right-radius: 20px;
   border-top-right-radius: 20px;
 }
 
 .header-search-btn:active {
-  background-color: black;
-  color: #4D4D4D;
+  background-color: #000000;
+  color: #4d4d4d;
   outline: none;
 }
 
 .header-search-btn:disabled {
-  background-color: #FFE17F;
+  background-color: #ffe17f;
   opacity: 0.3;
 }
 
 .header-search-window:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
   z-index: 1;
 }
 
 
 .header-search-window:disabled {
-  border: #4D4D4D solid 2px;
+  border: #4d4d4d solid 2px;
   border-bottom-left-radius: 20px;
   border-top-left-radius: 20px;
-  color: #4D4D4D;
-    
+  color: #4d4d4d;
 }
 
 .header-list {
   display: flex;
   flex-wrap: wrap;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
   width: 496px;
-  margin-top: 35px;
   padding: 0;
   margin: 0;
   margin-top: 30px;
@@ -309,15 +302,7 @@ a {
   padding: 0;
   background: none;
   margin-left: 60px;
-    
 }
-
-/* .catalog-products-buttons {
-    display: flex;
-    width: 297px;
-    margin: 0;
-    align-items: center;
-} */
 
 .service {
   margin-left: auto;
@@ -333,6 +318,7 @@ a {
 }
 
 .service-item {
+  list-style-type: none;
 }
 
 .service-link:hover {
@@ -344,7 +330,7 @@ a {
 }
 
 .service-link:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -361,23 +347,18 @@ a {
   display: none;
 }
 
-/* .catalog-products-buttons:hover {
-    cursor: pointer;
-    stroke: black;
-} */
-
 .header-catalog-button:hover {
   cursor: pointer;
 }
 
-.header-catalog-button:hover svg circle, 
+.header-catalog-button:hover svg circle,
 .header-catalog-button:hover svg g {
   opacity: 1;
 }
 
 .header-catalog-button:focus {
   border: none;
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -396,12 +377,12 @@ a {
   padding-bottom: 40px;
   position: absolute;
   top: 65px;
-  background: #FFE17F;
+  background: #ffe17f;
   z-index: 1;
 }
 
 .categories-products-item-menu {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -430,11 +411,6 @@ a {
   padding-top: 3px;
 }
 
-
-.categories-products-symbol:hover {
-
-}
-
 .img-wrapper {
   position: relative;
 }
@@ -456,6 +432,11 @@ a {
   display: flex;
   justify-content: space-between;
   width: 543px;
+  padding-inline-start: 0;
+}
+
+.slider-buttons li {
+  list-style-type: none;
 }
 
 .slider-button {
@@ -470,7 +451,7 @@ a {
 }
 
 .slider-button:focus {
-  outline: 2px solid #AF4FFF;
+  outline: 2px solid #af4fff;
   outline-offset: 2px;
 }
 
@@ -488,6 +469,7 @@ a {
   top: -85px;
   right: -14px;
   padding-left: 10px;
+  list-style-type: none;
 }
 
 .slider-pagination-button {
@@ -555,7 +537,7 @@ a {
 }
 
 .device-rating-number {
-  font-family: "Rubik-bold";
+  font-family: "Rubik-bold", serif;
   font-size: 180px;
   font-weight: 700;
   line-height: 135px;
@@ -577,7 +559,7 @@ p {
 }
 
 .index-slogan {
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -591,7 +573,7 @@ p {
 }
 
 .index-slogan-description {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 51px;
@@ -606,6 +588,8 @@ p {
   width: 220px;
   padding-bottom: 12px;
   background: linear-gradient(white, white 16px, #FFE17F 16px, #FFE17F 24px, white 24px, white);
+  text-decoration: none;
+  color: black;
 }
 
 .about-device-link a {
@@ -613,6 +597,8 @@ p {
   padding-bottom: 9px;
   padding-left: 39px;
   padding-right: 36px;
+  text-decoration: none;
+  color: black;
 }
 
 .about-device-link:hover {
@@ -632,7 +618,7 @@ p {
 }
 
 .device-characteristics {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 16px;
   line-height: 30px;
   margin-top: 0;
@@ -681,6 +667,7 @@ p {
 .categories-products-item {
   margin-right: 40px;
   width: 160px;
+  list-style-type: none;
 }
 
 .categories-products-item:nth-child(6n) {
@@ -716,7 +703,7 @@ p {
 
 
 .categories-products-img {
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-size: 18px;
   font-weight: 800;
   color: black;
@@ -729,7 +716,7 @@ p {
 .categories-products-title {
   display: block;
   align-self: center;
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-size: 18px;
   font-weight: 800;
   color: black;
@@ -742,7 +729,7 @@ p {
 }
 
 .service-title {
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
@@ -759,7 +746,7 @@ p {
 }
 
 .service-buttons-item {
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -837,7 +824,7 @@ p {
 }
 
 .service-buttons-title {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -850,7 +837,7 @@ p {
 
 .service-buttons-text {
   background-color: #F0F0F0; 
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -903,15 +890,13 @@ p {
 }
 
 .service-buttons-item:focus {
-  color: #FFE17F;
-  background-color: black;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+  outline: 2px solid #AF4FFF;
+  outline-offset: 2px;
 }
 
 
 .delivery-description-text {
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-weight: 800;
   font-size: 20px;
   line-height: 100px;
@@ -952,10 +937,14 @@ p {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 35px;
+  text-decoration: none;
+  color: black;
 }
 
 .button-mailing-link a {
   padding: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .button-mailing-link:hover {
@@ -988,14 +977,14 @@ p {
 }
 
 .about-description {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 30px;
 }
 
 .about-list {
-  font-family: "Rubik-bold";
+  font-family: "Rubik-bold", serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -1030,12 +1019,16 @@ p {
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-decoration: none;
+  color: black;
 }
 
 .about-link a {
   display: inline-block;
   padding-left: 24px;
   padding-right: 18px;
+  text-decoration: none;
+  color: black;
 }
 
 .about-link:hover {
@@ -1069,7 +1062,7 @@ p {
 }
 
 .contacts-description {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -1080,7 +1073,7 @@ p {
 }
 
 .contacts-subtitle {
-  font-family: "Rubik-bold";
+  font-family: "Rubik-bold", serif;
   font-size: 24px;
   line-height: 30px;
   margin: 0;
@@ -1089,7 +1082,7 @@ p {
 }
 
 .contacts-address-text, .contacts-address-phone {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -1126,7 +1119,7 @@ p {
 }
 
 .mailling-description {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -1136,7 +1129,7 @@ p {
 }
 
 .contacts-schedule {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -1158,7 +1151,7 @@ p {
 }
 
 .mailing-form input:first-of-type {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -1197,7 +1190,7 @@ p {
 }
 
 .mailing-form input:last-of-type {
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-size: 18px;
   font-weight: 800;
   line-height: 21px;
@@ -1223,7 +1216,7 @@ p {
 }
 
 .mailling-free {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -1286,7 +1279,7 @@ p {
 }
 
 .footer-contacts-address {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
@@ -1306,6 +1299,10 @@ p {
   letter-spacing: 0.2em;
   margin: 0;
   margin-top: 4px;
+}
+
+.footer-services-item {
+  list-style-type: none;
 }
 
 .footer-services-link {
@@ -1328,7 +1325,7 @@ p {
 }
 
 .contacts-address {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
@@ -1337,7 +1334,7 @@ p {
   margin-bottom: 30px;
 }
 .footer-address-text {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
@@ -1347,7 +1344,7 @@ p {
 .footer-contacts-phone {
   display: block;
   width: 180px;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
@@ -1409,10 +1406,6 @@ p {
   flex-wrap: wrap;
 }
 
-.footer-social-link {
-
-}
-
 .footer-social-link:hover  circle {
   fill: #FFC700;
   fill-opacity: 1;
@@ -1440,6 +1433,7 @@ p {
 .footer-social-item {
   margin-left: 7.5px;
   margin-right: 7.5px;
+  list-style-type: none;
 }
 
 .footer-social-item:first-of-type {
@@ -1452,6 +1446,8 @@ p {
 
 .footer-made-link {
   margin-left: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .footer-made-link:hover path {
@@ -1492,6 +1488,8 @@ p {
 
 .header-link-exit {
   margin-right: 26px;
+  text-decoration: none;
+  color: black;
 }
 
 .main-inner {
@@ -1531,7 +1529,7 @@ p {
 
 .breadcrumbs-list {
   display: flex;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 16px;
   line-height: 19px;
   font-style: normal;
@@ -1640,7 +1638,7 @@ p {
 }
 
 .catalog-filter-title {
-  font-family: "Rubik-bold";
+  font-family: "Rubik-bold", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1722,7 +1720,7 @@ p {
 .catalog-input-price {
   display: flex;
   width: 100px;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 15px;
   line-height: 18px;
   font-style: normal;
@@ -1826,7 +1824,7 @@ p {
 }
 
 .filter-input-color  {
-  font-family: "Rubik-bold";
+  font-family: "Rubik-bold", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1837,7 +1835,7 @@ p {
 }
 
 .filter-input-bluetooth {
-  font-family: "Rubik-bold";
+  font-family: "Rubik-bold", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -1846,7 +1844,7 @@ p {
 }
 
 .filter-colors-list {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 16px;
   line-height: 19px;
   font-style: normal;
@@ -1856,7 +1854,7 @@ p {
 }
 
 .filter-bluetooth-item {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 16px;
   line-height: 19px;
   font-style: normal;
@@ -2020,7 +2018,7 @@ p {
 }
 
 .product-card-title {
-  font-family: "Rubik-bold";
+  font-family: "Rubik-bold", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -2036,7 +2034,7 @@ p {
 }
 
 .product-card-price {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 21px;
   font-style: normal;
@@ -2093,7 +2091,7 @@ p {
 .pagination-item:nth-of-type(2) .pagination-link, 
 .pagination-item:nth-of-type(3) .pagination-link {
   display: block;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -2107,7 +2105,7 @@ p {
 
 .pagination-item:nth-of-type(4) .pagination-link  {
   display: block;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -2122,7 +2120,7 @@ p {
 
 .pagination-item:nth-of-type(5) .pagination-link {
   display: block;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -2136,7 +2134,7 @@ p {
 
 .pagination-item:nth-of-type(6) .pagination-link {
   display: block;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   line-height: 20px;
@@ -2145,8 +2143,7 @@ p {
   margin-right: 1px;
   margin-left: 2px;
   margin-top: 18px;
-  padding: 8px 12px;
-    
+  padding: 8px 12px; 
 }
 
 .pagination-item:first-of-type .pagination-link {
@@ -2156,7 +2153,6 @@ p {
   padding: 25px 25px;
   margin-right: 144px;
 }
-
 
 .pagination-item:last-of-type {
   margin-left: auto;
@@ -2198,7 +2194,7 @@ p {
 
 
 .select-control {
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-size: 18px;
   line-height: 20px;
   font-style: normal;
@@ -2269,11 +2265,13 @@ p {
   grid-area: product;
   display: flex;
   width: 250px;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .popover-product-link:hover {
@@ -2351,7 +2349,7 @@ p {
   color: black;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-size: 18px;
   font-weight: 800;
   font-style: normal;
@@ -2453,7 +2451,7 @@ p {
   width: 760px;
   grid-template-columns: 360px 40px 140px 40px 180px;
   grid-template-rows: 155px 137px 40px;
-  font-family: "Rubik-bold";
+  font-family: "Rubik-bold", serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -2474,7 +2472,7 @@ p {
 
 .invalid-email {
   color: black;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -2513,7 +2511,7 @@ p {
 .form-field {
   background-color: #F0F0F0;
   color: black;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2576,7 +2574,7 @@ p {
 .quantity-field {
   background-color: #F0F0F0;
   color: black;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2663,7 +2661,7 @@ p {
 .modal-order-button {
   display: block;
   width: 200px;
-  font-family: "Raleway ExtraBold";
+  font-family: "Raleway ExtraBold", serif;
   font-style: normal;
   font-weight: 800;
   font-size: 18px;
@@ -2733,7 +2731,7 @@ p {
 .extra-info {
   display: inline-block;
   width: 164px;
-  font-family: "Rubik-regular";
+  font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -2753,5 +2751,3 @@ p {
   margin: 0;
   margin-top: 14px;
 }
-
-
