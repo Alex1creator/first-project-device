@@ -148,6 +148,8 @@ body {
 }
 
 .service-link {
+  display: inline-block;
+  width: 136px;
   color: #000000;
   text-decoration: none;
   letter-spacing: 0.2em;
@@ -311,7 +313,7 @@ body {
 .service-list {
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: 172px 132px 172px;
+  grid-template-columns: 172px 148px 156px;
   width: 476px;
   margin-right: 57px;
   margin-bottom: 0;
@@ -335,13 +337,9 @@ body {
 }
 
 .service-list li:nth-child(3n) {
+  text-align: end;
   margin-left: auto;
 }
-
-/* .service-list li:last-child {
-    margin-right: 0;
-    margin-left: 48px;
-} */
 
 .categories-products-list-menu {
   display: none;
@@ -1514,6 +1512,7 @@ p {
 }
 
 .catalog-title {
+  width: 600px;
   font-size: 50px;
   line-height: 50px;
   margin: 0;
@@ -1523,6 +1522,8 @@ p {
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
+  width: 1040px;
   font-family: "Rubik-regular", serif;
   font-size: 16px;
   line-height: 19px;
@@ -1602,14 +1603,18 @@ p {
 }
 
 .sorting-title {
-  margin-left: 40px;
+  display: inline-block;
+  width: 300px;
+  margin-left: 37px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-size: 16px;
   line-height: 19px;
+  padding-top: 4px;
 }
 
 .sorting-type {
+  display: flex;
   align-self: center;
   width: 550px;
   margin-right: 187px;
@@ -1644,8 +1649,9 @@ p {
 .filter-header {
   font-size: 16px;
   line-height: 19px;
-  width: 261px;
+  width: 201px;
   margin: 0;
+  margin-right: 61px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   align-self: center;
@@ -1756,6 +1762,14 @@ p {
   outline-offset: 2px;
 }
 
+.catalog-filter-input:disabled {
+  opacity: 0.3;
+}
+
+.control-input {
+  opacity: 0.3;
+}
+
 .catalog-filter-color {
   margin-top: 0;
   margin-left: 59px;
@@ -1824,6 +1838,7 @@ p {
 }
 
 .control-label {
+  display: inline-block;
   padding-left: 36px;
 }
 
@@ -1904,6 +1919,7 @@ p {
 }
 
 .bluetooth-label {
+  display: inline-block;
   padding-left: 36px;
 }
 
@@ -1916,6 +1932,10 @@ p {
 .bluetooth-input:focus + .bluetooth-mark::after {
   outline: 2px solid #af4fff;
   outline-offset: 1px;
+}
+
+.bluetooth-input:disabled {
+  opacity: 0.3;
 }
 
 .catalog-btn-search {
@@ -1947,7 +1967,7 @@ p {
   flex-wrap: wrap;
   width: 840px;
   background-color: #ffffff;
-  justify-content: space-evenly;
+  justify-content: start;
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 27px;
@@ -1956,6 +1976,7 @@ p {
 
 .product-card {
   margin-top: 44px;
+  margin-left: 40px;
   position: relative;
   list-style-type: none;
 }
@@ -2056,7 +2077,7 @@ p {
   font-style: normal;
   font-weight: 400;
   color: #444444;
-  width: 63px;
+  width: 83px;
   margin-left: auto;
   margin-top: 0;
   text-align: right;
@@ -2173,10 +2194,11 @@ p {
 
 .pagination-item:first-of-type .pagination-link {
   display: block;
+  width: 84px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 25px 25px;
-  margin-right: 144px;
+  margin-right: 140px;
 }
 
 .pagination-item {
@@ -2189,6 +2211,7 @@ p {
 
 .pagination-item:last-of-type .pagination-link {
   display: block;
+  width: 97px;
   text-transform: uppercase;
   letter-spacing: 0.2em;
   padding: 25px 21px;
@@ -2231,7 +2254,7 @@ p {
   font-weight: 400;
   border: none;
   background: transparent;
-  margin-left: 183px;
+  margin-left: 41px;
   width: 158px;
 }
 

@@ -102,14 +102,13 @@
         <section class="catalog-filter">
             <div class="catalog-filter-container">
                 <div class="filter-header-container">
-                    <h2 class="filter-header">фильтр</h2>
+                    <h2 class="filter-header">фильтр:</h2>
                     <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
-                        <label class="sorting-title">сортировка:
-                            <select class="select-control" name="sorting-select">
-                                <option value="popular">Популярные</option>
-                                <option value="rear">Уникальные</option>
-                            </select>
-                        </label>
+                        <label class="sorting-title" for="sort">сортировка:</label>
+                        <select class="select-control" name="sorting-select" id="sort">
+                            <option value="popular">Популярные</option>
+                            <option value="rear">Уникальные</option>
+                        </select>
                         <button class="visually-hidden" type="submit" name="select-choose">Отсортировать</button>
                     </form>
                     <a class="set-down-to-up" href="#"><svg width="30" height="30" viewBox="0 0 30 30" fill="none"
