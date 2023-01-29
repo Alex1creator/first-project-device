@@ -250,8 +250,8 @@ body {
 }
 
 .header-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 255px 116px 125px;
   font-family: "Rubik-regular", serif;
   font-style: normal;
   font-weight: 400;
@@ -589,7 +589,7 @@ p {
   padding-top: 9px;
   padding-bottom: 9px;
   padding-left: 39px;
-  padding-right: 36px;
+  padding-right: 34px;
   text-decoration: none;
   color: #000000;
 }
